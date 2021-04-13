@@ -112,6 +112,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero-2\/type-of-noods.jpg" : {
+      "ft" : 16384,
+      "iS" : 132199,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero-2\/type-of-noods.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/fresh-fet.jpg" : {
       "ft" : 16384,
       "iS" : 566602,
