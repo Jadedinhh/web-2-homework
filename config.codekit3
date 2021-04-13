@@ -21,13 +21,40 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 0
+    },
+    "\/deploy\/js\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/deploy\/js\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/deploy\/head.html",
       "oF" : 2
+    },
+    "\/dev\/global\/script.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/script.html",
+      "oF" : 0
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
@@ -36,6 +63,17 @@
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
+    },
+    "\/dev\/js\/script.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dev\/js\/script-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     }
   },
   "hooks" : [
