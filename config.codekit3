@@ -201,14 +201,6 @@
       "oAP" : "\/Design\/JD_homework1.sketch",
       "oF" : 0
     },
-    "\/Design\/JD_homework1~.sketch" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/Design\/JD_homework1~.sketch",
-      "oF" : 0
-    },
     "\/dev\/content\/dishes.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -231,6 +223,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/search.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/search.html",
       "oF" : 0
     },
     "\/dev\/content\/service.kit" : {
