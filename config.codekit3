@@ -21,14 +21,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/head.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/head.html",
-      "oF" : 0
-    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -41,7 +33,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/deploy\/head.html",
       "oF" : 2
     },
