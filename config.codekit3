@@ -227,33 +227,33 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/footer.html",
-      "oF" : 0
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/deploy\/head.html",
-      "oF" : 2
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/header.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/header.html",
-      "oF" : 0
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/script.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/script.html",
-      "oF" : 0
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
