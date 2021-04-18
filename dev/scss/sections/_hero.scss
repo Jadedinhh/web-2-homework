@@ -1,0 +1,32 @@
+#hero{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero .";
+
+    >div{
+         grid-area: hero;
+         
+    @include md{
+        display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section section"
+                         "article aside";
+
+    }
+    
+    
+    section{
+        grid-area: section;
+
+    }
+    article{
+        grid-area: article;
+
+
+    }
+    aside{
+        grid-area: aside;
+
+    }
+}
+}
