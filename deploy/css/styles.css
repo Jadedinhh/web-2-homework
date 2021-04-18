@@ -352,6 +352,33 @@ template {
 /* =============
     Base
 ============= */
+main {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "header header" "search search" "hero hero" "service service" "hero-2 hero-2" "dishes dishes" "footer footer";
+}
+main header {
+  grid-area: header;
+}
+main #search {
+  grid-area: search;
+}
+main #hero {
+  grid-area: hero;
+}
+main #service {
+  grid-area: service;
+}
+main #hero-2 {
+  grid-area: hero-2;
+}
+main #dishes {
+  grid-area: dishes;
+}
+main footer {
+  grid-area: footer;
+}
+
 /* =============
     Typography
 ============= */
