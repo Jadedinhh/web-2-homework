@@ -398,10 +398,24 @@ header {
 @media (min-width: 768px) {
   header {
     grid-template-columns: 32px auto 32px;
+    grid-template-areas: ". header .";
   }
 }
 header > div {
   grid-area: header;
+}
+@media (min-width: 768px) {
+  header > div {
+    display: grid;
+    grid-template-columns: 3, 3fr;
+    grid-template-areas: " article section .";
+  }
+}
+header > div article {
+  grid-area: article;
+}
+header > div section {
+  grid-area: section;
 }
 
 footer {
