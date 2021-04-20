@@ -352,10 +352,6 @@ template {
 /* =============
     Base
 ============= */
-main {
-  display: grid;
-  gap: 24px;
-}
 @media (min-width: 1200px) {
   main {
     display: grid;
@@ -364,6 +360,8 @@ main {
   }
 }
 main > div {
+  display: grid;
+  gap: 24px;
   display: grid;
 }
 @media (min-width: 1200px) {

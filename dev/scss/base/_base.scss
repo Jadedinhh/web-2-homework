@@ -8,10 +8,11 @@ main{
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". main .";
     }
-    display: grid;
-    gap: 24px;
+    
 
 >div{
+    display: grid;
+    gap: 24px;
     @include xl{
         grid-area: main;
         
