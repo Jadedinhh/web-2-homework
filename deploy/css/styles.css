@@ -412,6 +412,22 @@ footer {
 footer > div {
   grid-area: footer;
 }
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section article" ". aside";
+  }
+}
+footer > div section {
+  grid-area: section;
+}
+footer > div article {
+  grid-area: article;
+}
+footer > div aside {
+  grid-area: aside;
+}
 
 #hero {
   display: grid;
@@ -454,6 +470,19 @@ footer > div {
 }
 #service > div {
   grid-area: service;
+}
+@media (min-width: 768px) {
+  #service > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section article";
+  }
+}
+#service > div section {
+  grid-area: section;
+}
+#service > div article {
+  grid-area: article;
 }
 
 #dishes {

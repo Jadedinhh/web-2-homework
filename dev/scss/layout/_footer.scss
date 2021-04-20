@@ -5,5 +5,28 @@ footer{
 
     >div{
         grid-area: footer;
+
+        @include md{
+            display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "section article"
+                             ". aside";
+    
+        }
+        
+        
+        section{
+            grid-area: section;
+    
+        }
+        article{
+            grid-area: article;
+    
+    
+        }
+        aside{
+            grid-area: aside;
+    
+        }
     }
 }
