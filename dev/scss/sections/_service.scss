@@ -3,9 +3,13 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". service .";
 
+    
     >div{
-        grid-area: service
+        grid-area: service;
 
+    
+    
+    }
     }
     
-}
+
