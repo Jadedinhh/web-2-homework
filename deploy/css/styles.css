@@ -352,6 +352,17 @@ template {
 /* =============
     Base
 ============= */
+main figure {
+  padding: 0;
+  margin: 0;
+}
+main ul {
+  padding: 0;
+  margin: 0;
+}
+main ul li {
+  list-style: none;
+}
 @media (min-width: 1200px) {
   main {
     display: grid;
