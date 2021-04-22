@@ -3,7 +3,7 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     
-    >article{
+    >div{
         grid-area: search;
     }
 }

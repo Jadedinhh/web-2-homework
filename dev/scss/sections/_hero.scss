@@ -1,33 +1,30 @@
 #hero{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". hero .";
+    img{
+        width: 100%;
+    }
     
 
-    >div{
-         grid-area: hero;
+    >ul{
+        li{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero-content .";
+
+            @include md{
+                display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "a a";
+        
+            }
+
+            a{
+                grid-area: hero-content;
+            }
+        }
          
-    @include md{
-        display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "section section"
-                         "article aside";
-
-    }
     
     
-    section{
-        grid-area: section;
-
+    
+    
     }
-    article{
-        grid-area: article;
-
-
-    }
-    aside{
-        grid-area: aside;
-
-    }
-}
 }

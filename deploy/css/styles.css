@@ -380,10 +380,6 @@ main > div {
     grid-area: main;
   }
 }
-img {
-  width: 100%;
-}
-
 /* =============
     Typography
 ============= */
@@ -452,29 +448,23 @@ footer > div aside {
   grid-area: aside;
 }
 
-#hero {
+#hero img {
+  width: 100%;
+}
+#hero > ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
-}
-#hero > div {
-  grid-area: hero;
+  grid-template-areas: ". hero-content .";
 }
 @media (min-width: 768px) {
-  #hero > div {
+  #hero > ul li {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "section section" "article aside";
+    grid-template-areas: "a a";
   }
 }
-#hero > div section {
-  grid-area: section;
-}
-#hero > div article {
-  grid-area: article;
-}
-#hero > div aside {
-  grid-area: aside;
+#hero > ul li a {
+  grid-area: hero-content;
 }
 
 #search {
@@ -482,37 +472,37 @@ footer > div aside {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
-#search > article {
+#search > div {
   grid-area: search;
 }
 
-#service {
+#service ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". service .";
 }
-#service > div {
+#service ul li > div {
   grid-area: service;
 }
-@media (min-width: 768px) {
-  #service > div {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "section article";
-  }
+
+#hero-2 ul {
+  display: grid;
 }
-#service > div section {
-  grid-area: section;
+#hero-2 ul li img {
+  width: 100%;
 }
-#service > div article {
-  grid-area: article;
+#hero-2 ul #h2-3 {
+  display: none;
 }
 
-#dishes {
+#dishes ul li img {
+  width: 100%;
+}
+#dishes ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". dishes .";
 }
-#dishes > div {
-  grid-area: dishes;
+#dishes ul li section > div {
+  grid-area: new-content;
 }
