@@ -434,9 +434,14 @@ footer > div {
 }
 @media (min-width: 1024px) {
   footer > div {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "section article" ". aside";
+    grid-template-columns: 3, 3fr;
+    grid-template-areas: "section article aside";
+  }
+}
+@media (min-width: 1200px) {
+  footer > div {
+    grid-template-columns: 3, 3fr;
+    grid-template-areas: "section article aside";
   }
 }
 footer > div section {
@@ -459,13 +464,22 @@ footer > div aside {
 }
 @media (min-width: 768px) {
   #hero > ul li {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "a ";
+    grid-template-columns: 30% auto;
+    grid-template-areas: "h1 h2";
   }
 }
 #hero > ul li a {
   grid-area: hero-content;
+}
+@media (min-width: 768px) {
+  #hero > ul #h1 {
+    grid-area: h1;
+  }
+}
+@media (min-width: 768px) {
+  #hero > ul #h2 {
+    grid-area: h2;
+  }
 }
 
 #search {

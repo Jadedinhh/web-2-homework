@@ -1,39 +1,45 @@
-footer{
+footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
-    >div{
+
+
+
+    >div {
         grid-area: footer;
 
-        @include md{
-         display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "section article"
-                             ". aside";
-    
-        }
-        
-        @include lg{
+        @include md {
             display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "section article"
-                             ". aside";
+            grid-template-columns: 50% auto;
+            grid-template-areas: "section article"
+                ". aside";
+        }
+
+        @include lg {
+            grid-template-columns: (3, 3fr);
+            grid-template-areas: "section article aside";
+        }
+
+        @include xl {
+            grid-template-columns: (3, 3fr);
+            grid-template-areas: "section article aside";
+        }
+
+        section {
+            grid-area: section;
 
         }
-        
-        section{
-            grid-area: section;
-    
-        }
-        article{
+
+        article {
             grid-area: article;
-    
-    
+
+
         }
-        aside{
+
+        aside {
             grid-area: aside;
-    
+
         }
     }
 }
