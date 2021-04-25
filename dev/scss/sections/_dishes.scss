@@ -1,20 +1,58 @@
 #dishes {
 
     ul {
+
         li {
             img {
                 width: 100%;
             }
+@include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "d1 d2"
+                                "d3 d4"
+                                " d5";
+        }
 
             section {
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". dishes .";
 
+        
                 >div {
                     grid-area: dishes;
 
+
                 }
+            }
+
+        }
+
+        #d1{
+            @include md{
+                grid-area: d1;
+            }
+
+        }
+        #d2{
+            @include md{
+                grid-area: d2;
+            }
+        }
+        #d3{
+            @include md{
+                grid-area: d3;
+            }
+        }
+        #d4{
+            @include md{
+                grid-area: d4;
+            }
+        }
+        #d5{
+            @include md{
+                grid-area: d5;
             }
         }
     }
