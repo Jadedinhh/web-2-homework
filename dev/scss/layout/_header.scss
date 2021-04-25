@@ -6,18 +6,15 @@ header{
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
 
-    @include md{
-        grid-template-columns: 32px auto 32px;
-        grid-template-areas: ". header .";
-    }
+     
 
     >div{
         grid-area: header;
         
-        @include md{
+       @include md{
             display: grid;
-            grid-template-columns: 2, 3fr;
-            grid-template-areas: " article section .";
+            grid-template-columns: 16px 10% auto 16px;
+            grid-template-areas: " . article section .";
         }
 
         article{
