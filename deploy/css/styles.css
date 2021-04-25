@@ -373,13 +373,13 @@ main ul li {
 main > div {
   display: grid;
   gap: 24px;
-  display: grid;
 }
 @media (min-width: 1200px) {
   main > div {
     grid-area: main;
   }
 }
+
 /* =============
     Typography
 ============= */
@@ -451,19 +451,19 @@ footer > div aside {
 #hero img {
   width: 100%;
 }
-#hero > ul li {
+#hero #hero-content > ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
 @media (min-width: 768px) {
-  #hero > ul li {
+  #hero #hero-content > ul li {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "a a";
   }
 }
-#hero > ul li a {
+#hero #hero-content > ul li a {
   grid-area: hero-content;
 }
 
