@@ -438,6 +438,13 @@ footer > div {
     grid-template-areas: "section article" ". aside";
   }
 }
+@media (min-width: 1024px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section article" ". aside";
+  }
+}
 footer > div section {
   grid-area: section;
 }
@@ -504,5 +511,5 @@ footer > div aside {
   grid-template-areas: ". dishes .";
 }
 #dishes ul li section > div {
-  grid-area: new-content;
+  grid-area: dishes;
 }
