@@ -2,14 +2,62 @@
 
     ul{
         display: grid;
+
+        @include md{
+                grid-template-columns: 50% auto;
+                grid-template-areas: "meal letseat";
+            }
+
+        @include lg{
+            grid-template-columns: 16px 55% auto 16px;
+            grid-template-areas: ". meal letseat .";
+        }
+
+        @include xl{
+            grid-template-columns: 55% auto;
+            grid-template-areas: "meal letseat"
+                                 "meal h2-3";
+        }
+
         li{
             img{
                 width: 100%;
             }
+            
         }
+        
+        #h2-1{
+            @include md{
+             grid-area: meal;   
+            }
+            @include lg{
+                grid-area: meal;
+            }
+            @include xl{
+                grid-area: meal;
+            }    
+    
+            }
+    
+        #h2-2{
+            @include md{
+                grid-area: letseat;
+    
+            }
+            @include lg{
+                grid-area: letseat;
+            }  
+            @include xl{
+                grid-area: letseat;
+            }  
+            }
 
         #h2-3{
             display: none;
+            @include xl{
+                display: list-item;
+            }
         }
+        
     }
 }

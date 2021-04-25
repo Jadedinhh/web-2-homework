@@ -412,7 +412,7 @@ header > div {
 @media (min-width: 768px) {
   header > div {
     display: grid;
-    grid-template-columns: 3, 3fr;
+    grid-template-columns: 2, 3fr;
     grid-template-areas: " article section .";
   }
 }
@@ -467,7 +467,7 @@ footer > div aside {
   #hero > ul li {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "a a";
+    grid-template-areas: "a ";
   }
 }
 #hero > ul li a {
@@ -495,11 +495,64 @@ footer > div aside {
 #hero-2 ul {
   display: grid;
 }
+@media (min-width: 768px) {
+  #hero-2 ul {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "meal letseat";
+  }
+}
+@media (min-width: 1024px) {
+  #hero-2 ul {
+    grid-template-columns: 16px 55% auto 16px;
+    grid-template-areas: ". meal letseat .";
+  }
+}
+@media (min-width: 1200px) {
+  #hero-2 ul {
+    grid-template-columns: 55% auto;
+    grid-template-areas: "meal letseat" "meal h2-3";
+  }
+}
 #hero-2 ul li img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  #hero-2 ul #h2-1 {
+    grid-area: meal;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-2 ul #h2-1 {
+    grid-area: meal;
+  }
+}
+@media (min-width: 1200px) {
+  #hero-2 ul #h2-1 {
+    grid-area: meal;
+  }
+}
+@media (min-width: 768px) {
+  #hero-2 ul #h2-2 {
+    grid-area: letseat;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-2 ul #h2-2 {
+    grid-area: letseat;
+  }
+}
+@media (min-width: 1200px) {
+  #hero-2 ul #h2-2 {
+    grid-area: letseat;
+  }
+}
 #hero-2 ul #h2-3 {
   display: none;
+}
+@media (min-width: 1200px) {
+  #hero-2 ul #h2-3 {
+    display: list-item;
+  }
 }
 
 #dishes ul li img {
