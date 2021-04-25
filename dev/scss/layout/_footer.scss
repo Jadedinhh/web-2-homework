@@ -7,13 +7,20 @@ footer{
         grid-area: footer;
 
         @include md{
-            display: grid;
+         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: "section article"
                              ". aside";
     
         }
         
+        @include lg{
+            display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "section article"
+                             ". aside";
+
+        }
         
         section{
             grid-area: section;

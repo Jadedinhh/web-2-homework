@@ -1,26 +1,26 @@
-#dishes{
+#dishes {
 
-    ul{
-        li{
-            img{
+    ul {
+        li {
+            img {
                 width: 100%;
             }
 
-            section{
+            section {
                 display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". dishes .";
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". dishes .";
 
-    >div{
-        grid-area: new-content;
+                >div {
+                    grid-area: dishes;
 
-    }
+                }
             }
         }
     }
-    
-    
 
-    
-    
+
+
+
+
 }
