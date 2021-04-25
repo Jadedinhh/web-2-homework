@@ -16,7 +16,7 @@ header{
         
         @include md{
             display: grid;
-            grid-template-columns: 3, 3fr;
+            grid-template-columns: 2, 3fr;
             grid-template-areas: " article section .";
         }
 
