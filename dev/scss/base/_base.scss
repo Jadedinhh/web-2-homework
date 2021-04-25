@@ -2,6 +2,7 @@
     Base
 ============= */
 main{
+    
     figure{ 
         padding: 0;
         margin: 0;
@@ -42,34 +43,7 @@ main{
                        //"dishes dishes"
                        //"footer footer";
 
-    header{
-        //grid-area: header;
-
-    }
-    #search{
-        //grid-area: search;
-
-    }
-    #hero{
-        //grid-area: hero;
-        
-    }
-    #service{
-        //grid-area: service;
-
-    }
-    #hero-2{
-        //grid-area: hero-2;
-
-    }
-    #dishes{
-        //grid-area: dishes;
-
-    }
-    footer{
-        //grid-area: footer;
-
-    }
+    
 }
 
 }
