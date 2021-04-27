@@ -19,9 +19,9 @@ main{
 
     @include xl{
         display: grid;
-        grid-template-columns: auto 1200px auto;
+       grid-template-columns: auto 1200px auto;
         grid-template-areas: ". main .";
-    }
+   }
     
 
 >div{

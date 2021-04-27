@@ -17,12 +17,12 @@ footer {
         }
 
         @include lg {
-            grid-template-columns: (3, 3fr);
+            grid-template-columns: repeat(3, 3fr);
             grid-template-areas: "section article aside";
         }
 
         @include xl {
-            grid-template-columns: (3, 3fr);
+            grid-template-columns: repeat(3, 3fr);
             grid-template-areas: "section article aside";
         }
 
