@@ -10,10 +10,7 @@
             grid-template-columns: repeat(3,2fr);
         }
 
-        @include xl{
-            grid-template-columns: auto 1200px auto;
-        }  
-
+    
         li {
             img {
                 width: 100%;

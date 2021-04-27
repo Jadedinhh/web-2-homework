@@ -363,9 +363,21 @@ main ul {
 main ul li {
   list-style: none;
 }
+@media (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". main .";
+  }
+}
 main > div {
   display: grid;
   gap: 24px;
+}
+@media (min-width: 1200px) {
+  main > div {
+    grid-area: main;
+  }
 }
 
 /* =============
@@ -480,11 +492,6 @@ footer > div aside {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
-@media (min-width: 1200px) {
-  #search {
-    grid-template-columns: auto 1200px auto;
-  }
-}
 #search > div {
   grid-area: search;
 }
@@ -581,11 +588,6 @@ footer > div aside {
 @media (min-width: 1024px) {
   #dishes ul {
     grid-template-columns: repeat(3, 2fr);
-  }
-}
-@media (min-width: 1200px) {
-  #dishes ul {
-    grid-template-columns: auto 1200px auto;
   }
 }
 #dishes ul li img {
