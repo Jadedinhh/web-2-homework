@@ -8,10 +8,16 @@
                 grid-template-columns: 50% auto;
             } 
 
+            @include xl{
+                grid-template-columns: auto 1200px auto;
+               }
+
             li {
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". service .";
+
+                
 
                 
 

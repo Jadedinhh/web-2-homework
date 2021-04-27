@@ -363,21 +363,9 @@ main ul {
 main ul li {
   list-style: none;
 }
-@media (min-width: 1200px) {
-  main {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". main .";
-  }
-}
 main > div {
   display: grid;
   gap: 24px;
-}
-@media (min-width: 1200px) {
-  main > div {
-    grid-area: main;
-  }
 }
 
 /* =============
@@ -399,6 +387,11 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+}
+@media (min-width: 1200px) {
+  header {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 header > div {
   grid-area: header;
@@ -468,6 +461,11 @@ footer > div aside {
     grid-template-columns: 50% auto;
   }
 }
+@media (min-width: 1200px) {
+  #hero > ul {
+    grid-template-columns: auto 1200px auto;
+  }
+}
 #hero > ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -482,6 +480,11 @@ footer > div aside {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1200px auto;
+  }
+}
 #search > div {
   grid-area: search;
 }
@@ -490,6 +493,11 @@ footer > div aside {
   #service ul {
     display: grid;
     grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #service ul {
+    grid-template-columns: auto 1200px auto;
   }
 }
 #service ul li {
@@ -573,6 +581,11 @@ footer > div aside {
 @media (min-width: 1024px) {
   #dishes ul {
     grid-template-columns: repeat(3, 2fr);
+  }
+}
+@media (min-width: 1200px) {
+  #dishes ul {
+    grid-template-columns: auto 1200px auto;
   }
 }
 #dishes ul li img {
