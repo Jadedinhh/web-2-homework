@@ -3,18 +3,25 @@
         width: 100%;
     }
 
-
-
     >ul {
+        
+        @include md{
+                display: grid;
+                grid-template-columns: 40% auto;
+            }
+         @include lg{
+                grid-template-columns: 50% auto;
+            }
+        @include xl{
+            
+        }
+
         li {
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
 
-            @include md {
-                grid-template-columns: 30% auto;
-                grid-template-areas: "h1 h2";
-            }
+            
 
             a {
                 grid-area: hero-content;
@@ -22,25 +29,6 @@
             }
 
         }
-
-        #h1 {
-            @include md{
-               grid-area: h1;
-  
-            }
-           
-        }
-
-        #h2 {
-            @include md{
-              grid-area: h2;
-   
-            }
-           
-        }
-
-
-
     }
 
 
