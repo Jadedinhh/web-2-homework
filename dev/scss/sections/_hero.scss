@@ -2,8 +2,9 @@
     img {
         width: 100%;
     }
-
-
+    
+    
+         
     >ul {
         
         @include md{
@@ -13,10 +14,9 @@
          @include lg{
                 grid-template-columns: 50% auto;
             }
+        
 
-        @include xl{
-                grid-template-columns: auto 1200px auto;
-            }       
+       
          
     
         li {
@@ -24,8 +24,7 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
 
-           
-
+        
             a {
                 grid-area: hero-content;
 
@@ -35,4 +34,6 @@
     }
 
 
-}
+    }
+   
+

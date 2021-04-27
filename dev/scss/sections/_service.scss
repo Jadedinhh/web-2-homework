@@ -1,54 +1,29 @@
 #service {
-    >div {
 
 
-        ul {
-<<<<<<< HEAD
-            @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
-            } 
 
-            @include xl{
-                grid-template-columns: auto 1200px auto;
-               }
-
-=======
->>>>>>> parent of 6e1ecf1 (update hero)
-            li {
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". service .";
-
-                @include md {
-                    grid-template-columns: 50% auto;
-                    grid-template-areas: "service1 service2";
-                }
-
-                #service1{
-                    @include md{
-                        grid-area: service1;
-                    }
-
-                }
-
-                #service2{
-                    @include md{
-                        grid-area: service2;
-                    }
-                }
-
-                
-
-                >div {
-                    grid-area: service;
-                }
-            }
-
+    ul {
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
 
         }
+
+        li {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". service .";
+
+
+
+
+
+
+            >div {
+                grid-area: service;
+            }
+        }
+
+
     }
-
-
-
 }

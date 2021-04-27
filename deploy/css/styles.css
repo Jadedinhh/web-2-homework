@@ -462,7 +462,6 @@ footer > div aside {
 #hero img {
   width: 100%;
 }
-<<<<<<< HEAD
 @media (min-width: 768px) {
   #hero > ul {
     display: grid;
@@ -474,36 +473,13 @@ footer > div aside {
     grid-template-columns: 50% auto;
   }
 }
-@media (min-width: 1200px) {
-  #hero > ul {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-=======
->>>>>>> parent of 6e1ecf1 (update hero)
 #hero > ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
-@media (min-width: 768px) {
-  #hero > ul li {
-    grid-template-columns: 30% auto;
-    grid-template-areas: "h1 h2";
-  }
-}
 #hero > ul li a {
   grid-area: hero-content;
-}
-@media (min-width: 768px) {
-  #hero > ul #h1 {
-    grid-area: h1;
-  }
-}
-@media (min-width: 768px) {
-  #hero > ul #h2 {
-    grid-area: h2;
-  }
 }
 
 #search {
@@ -515,40 +491,18 @@ footer > div aside {
   grid-area: search;
 }
 
-#service > div ul li {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". service .";
-}
 @media (min-width: 768px) {
-  #service > div ul li {
-    grid-template-columns: 50% auto;
-    grid-template-areas: "service1 service2";
-  }
-}
-<<<<<<< HEAD
-@media (min-width: 1200px) {
   #service ul {
-    grid-template-columns: auto 1200px auto;
+    display: grid;
+    grid-template-columns: 50% auto;
   }
 }
 #service ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". service .";
-=======
-@media (min-width: 768px) {
-  #service > div ul li #service1 {
-    grid-area: service1;
-  }
 }
-@media (min-width: 768px) {
-  #service > div ul li #service2 {
-    grid-area: service2;
-  }
->>>>>>> parent of 6e1ecf1 (update hero)
-}
-#service > div ul li > div {
+#service ul li > div {
   grid-area: service;
 }
 
