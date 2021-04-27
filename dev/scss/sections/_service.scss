@@ -1,19 +1,40 @@
-#service{
- 
-    ul{
-        li{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". service .";
+#service {
+    >div {
 
-            >div{
-                grid-area: service;
+
+        ul {
+            li {
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". service .";
+
+                @include md {
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "service1 service2";
+                }
+
+                #service1{
+                    @include md{
+                        grid-area: service1;
+                    }
+
+                }
+
+                #service2{
+                    @include md{
+                        grid-area: service2;
+                    }
+                }
+
+                >div {
+                    grid-area: service;
+                }
             }
+
+
         }
-    
+    }
+
+
 
 }
-    
-    }
-    
-

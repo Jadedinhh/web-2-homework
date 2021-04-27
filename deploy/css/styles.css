@@ -491,12 +491,28 @@ footer > div aside {
   grid-area: search;
 }
 
-#service ul li {
+#service > div ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". service .";
 }
-#service ul li > div {
+@media (min-width: 768px) {
+  #service > div ul li {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "service1 service2";
+  }
+}
+@media (min-width: 768px) {
+  #service > div ul li #service1 {
+    grid-area: service1;
+  }
+}
+@media (min-width: 768px) {
+  #service > div ul li #service2 {
+    grid-area: service2;
+  }
+}
+#service > div ul li > div {
   grid-area: service;
 }
 
@@ -566,43 +582,36 @@ footer > div aside {
 #dishes ul li img {
   width: 100%;
 }
-@media (min-width: 768px) {
-  #dishes ul li {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "d1 d2" "d3 d4" " d5";
-  }
-}
-#dishes ul li section {
+#dishes ul section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". dishes .";
 }
-#dishes ul li section > div {
+#dishes ul section > div {
   grid-area: dishes;
 }
 @media (min-width: 768px) {
-  #dishes ul #d1 {
+  #dishes #d1 {
     grid-area: d1;
   }
 }
 @media (min-width: 768px) {
-  #dishes ul #d2 {
+  #dishes #d2 {
     grid-area: d2;
   }
 }
 @media (min-width: 768px) {
-  #dishes ul #d3 {
+  #dishes #d3 {
     grid-area: d3;
   }
 }
 @media (min-width: 768px) {
-  #dishes ul #d4 {
+  #dishes #d4 {
     grid-area: d4;
   }
 }
 @media (min-width: 768px) {
-  #dishes ul #d5 {
+  #dishes #d5 {
     grid-area: d5;
   }
 }
