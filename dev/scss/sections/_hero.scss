@@ -15,14 +15,15 @@
                 grid-template-columns: 50% auto;
             }
         
-
-       
-         
     
         li {
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
+
+            @include xl{
+                grid-template-columns: auto 480px 16px;
+            }
 
         
             a {
@@ -31,6 +32,16 @@
             }
 
         }
+         #h1{
+             background-color: $choco;
+
+         }
+         #h2{
+             background-color: $tan;
+             @include xl{
+                grid-template-columns: 16px 480px auto;
+            }
+         }
     }
 
 

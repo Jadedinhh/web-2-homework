@@ -363,21 +363,9 @@ main ul {
 main ul li {
   list-style: none;
 }
-@media (min-width: 1200px) {
-  main {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". main .";
-  }
-}
 main > div {
   display: grid;
   gap: 24px;
-}
-@media (min-width: 1200px) {
-  main > div {
-    grid-area: main;
-  }
 }
 
 /* =============
@@ -399,6 +387,7 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+  background-color: #3D4133;
 }
 @media (min-width: 1200px) {
   header {
@@ -478,14 +467,35 @@ footer > div aside {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
+@media (min-width: 1200px) {
+  #hero > ul li {
+    grid-template-columns: auto 480px 16px;
+  }
+}
 #hero > ul li a {
   grid-area: hero-content;
+}
+#hero > ul #h1 {
+  background-color: #8B6956;
+}
+#hero > ul #h2 {
+  background-color: #D5A57F;
+}
+@media (min-width: 1200px) {
+  #hero > ul #h2 {
+    grid-template-columns: 16px 480px auto;
+  }
 }
 
 #search {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+}
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1000px auto;
+  }
 }
 #search > div {
   grid-area: search;

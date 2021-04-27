@@ -16,20 +16,14 @@ main{
         }
     }
 
-    @include xl{
-        display: grid;
-        grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". main .";
-    }
+    
    
     
 
 >div{
     display: grid;
     gap: 24px;
-    @include xl{
-        grid-area: main;
-    }
+    
 
     
     
