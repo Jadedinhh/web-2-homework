@@ -10,5 +10,14 @@
 
     >div{
         grid-area: search;
+
+        form{
+             input{
+
+             }
+             button{
+                 background-color: $choco;
+             }
+        }
     }
 }

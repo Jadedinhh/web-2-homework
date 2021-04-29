@@ -505,6 +505,9 @@ footer > div aside {
 #search > div {
   grid-area: search;
 }
+#search > div form button {
+  background-color: #8B6956;
+}
 
 @media (min-width: 768px) {
   #service ul {
