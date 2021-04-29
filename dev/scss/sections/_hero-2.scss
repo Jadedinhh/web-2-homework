@@ -1,20 +1,27 @@
 #hero-2{
     
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". hero-2 .";
+    }
     ul{
         display: grid;
 
         @include md{
                 grid-template-columns: 50% auto;
-                grid-template-areas: "meal letseat";
             }
 
         @include lg{
             grid-template-columns: 16px 55% auto 16px;
-            grid-template-areas: ". meal letseat .";
+            grid-template-areas: ". meal letseat ."
+        
         }
 
         @include xl{
-            grid-template-columns: 55% auto;
+            grid-area: hero-2; 
+
+            grid-template-columns: 65% auto;
             grid-template-areas: "meal letseat"
                                  "meal h2-3";
         }
@@ -27,29 +34,19 @@
         }
         
         #h2-1{
-            @include md{
-             grid-area: meal;   
-            }
-            @include lg{
-                grid-area: meal;
-            }
-            @include xl{
-                grid-area: meal;
-            }    
+           @include lg{
+               grid-area: meal; 
+           }
+               
+           
     
             }
     
         #h2-2{
-            @include md{
-                grid-area: letseat;
-    
-            }
-            @include lg{
-                grid-area: letseat;
-            }  
-            @include xl{
-                grid-area: letseat;
-            }  
+             @include lg{
+                 grid-area: letseat;
+             }
+                
             }
 
         #h2-3{

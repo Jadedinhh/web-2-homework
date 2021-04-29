@@ -1,40 +1,93 @@
 #dishes {
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". dishes .";
+    }
+    
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
 
-    ul {
+    >div{
+        @include md{
+            grid-area: dishes;
+        }
+
+         ul {
         @include md{
             display: grid;
-            grid-template-columns: 50% auto;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: "d1 d1 d2 d2"
+                                 "d3 d3 d4 d4"
+                                 " . d5 d5 .";
+            gap: 16px;
         }
 
         @include lg{
-            grid-template-columns: repeat(3,2fr);
+            grid-template-columns: repeat(6,1fr);
+            grid-template-areas: "d1 d1 d2 d2 d3 d3"
+                                 ". d4 d4 d5 d5 .";
         }
 
     
         li {
+            background-color: $xanh;
             img {
                 width: 100%;
             }
-
-        }
-
-            section {
+section {
                 display: grid;
                 grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". dishes .";
+                grid-template-areas: ". dishes-content .";
 
         
                 >div {
-                    grid-area: dishes;
+                    grid-area: dishes-content;
+
+                    button{
+                        background-color: $chocomilk;
+                    }
 
                 
 
 
                 }
             }
+        }
+
+        #d1{
+            @include md{
+                grid-area: d1;
+            }
+        }
+        #d2{
+            @include md{
+                grid-area: d2;
+            }
+        }
+        #d3{
+            @include md{
+                grid-area: d3;
+            }
+        }
+        #d4{
+            @include md{
+                grid-area: d4;
+            }
+        }
+        #d5{
+            @include md{
+                grid-area: d5;
+            }
+        }
+
+            
 
         }
 
+    }
+   
     
     }
 

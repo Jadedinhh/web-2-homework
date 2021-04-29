@@ -363,10 +363,6 @@ main ul {
 main ul li {
   list-style: none;
 }
-main > div {
-  display: grid;
-  gap: 24px;
-}
 
 /* =============
     Typography
@@ -412,6 +408,8 @@ header > div section {
 }
 
 footer {
+  background-color: #5F5F50;
+  color: #fff;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
@@ -510,27 +508,52 @@ footer > div aside {
 }
 
 @media (min-width: 768px) {
-  #service ul {
+  #service {
     display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". service .";
+  }
+}
+@media (min-width: 1200px) {
+  #service {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+#service ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #service ul {
     grid-template-columns: 50% auto;
+    grid-area: service;
   }
 }
 #service ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". service .";
+  grid-template-areas: ". service-context .";
+  background-color: #6B705C;
 }
 #service ul li > div {
-  grid-area: service;
+  grid-area: service-context;
 }
-
+#service ul li > div section div button {
+  background-color: #CB997E;
+}
+@media (min-width: 1200px) {
+  #hero-2 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". hero-2 .";
+  }
+}
 #hero-2 ul {
   display: grid;
 }
 @media (min-width: 768px) {
   #hero-2 ul {
     grid-template-columns: 50% auto;
-    grid-template-areas: "meal letseat";
   }
 }
 @media (min-width: 1024px) {
@@ -541,39 +564,20 @@ footer > div aside {
 }
 @media (min-width: 1200px) {
   #hero-2 ul {
-    grid-template-columns: 55% auto;
+    grid-area: hero-2;
+    grid-template-columns: 65% auto;
     grid-template-areas: "meal letseat" "meal h2-3";
   }
 }
 #hero-2 ul li img {
   width: 100%;
 }
-@media (min-width: 768px) {
-  #hero-2 ul #h2-1 {
-    grid-area: meal;
-  }
-}
 @media (min-width: 1024px) {
   #hero-2 ul #h2-1 {
     grid-area: meal;
   }
 }
-@media (min-width: 1200px) {
-  #hero-2 ul #h2-1 {
-    grid-area: meal;
-  }
-}
-@media (min-width: 768px) {
-  #hero-2 ul #h2-2 {
-    grid-area: letseat;
-  }
-}
 @media (min-width: 1024px) {
-  #hero-2 ul #h2-2 {
-    grid-area: letseat;
-  }
-}
-@media (min-width: 1200px) {
   #hero-2 ul #h2-2 {
     grid-area: letseat;
   }
@@ -588,24 +592,75 @@ footer > div aside {
 }
 
 @media (min-width: 768px) {
-  #dishes ul {
+  #dishes {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". dishes .";
+  }
+}
+@media (min-width: 1200px) {
+  #dishes {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 768px) {
+  #dishes > div {
+    grid-area: dishes;
+  }
+}
+@media (min-width: 768px) {
+  #dishes > div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "d1 d1 d2 d2" "d3 d3 d4 d4" " . d5 d5 .";
+    gap: 16px;
   }
 }
 @media (min-width: 1024px) {
-  #dishes ul {
-    grid-template-columns: repeat(3, 2fr);
+  #dishes > div ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "d1 d1 d2 d2 d3 d3" ". d4 d4 d5 d5 .";
   }
 }
-#dishes ul li img {
+#dishes > div ul li {
+  background-color: #E0E0BB;
+}
+#dishes > div ul li img {
   width: 100%;
 }
-#dishes ul section {
+#dishes > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". dishes .";
+  grid-template-areas: ". dishes-content .";
 }
-#dishes ul section > div {
-  grid-area: dishes;
+#dishes > div ul li section > div {
+  grid-area: dishes-content;
+}
+#dishes > div ul li section > div button {
+  background-color: #CB997E;
+}
+@media (min-width: 768px) {
+  #dishes > div ul #d1 {
+    grid-area: d1;
+  }
+}
+@media (min-width: 768px) {
+  #dishes > div ul #d2 {
+    grid-area: d2;
+  }
+}
+@media (min-width: 768px) {
+  #dishes > div ul #d3 {
+    grid-area: d3;
+  }
+}
+@media (min-width: 768px) {
+  #dishes > div ul #d4 {
+    grid-area: d4;
+  }
+}
+@media (min-width: 768px) {
+  #dishes > div ul #d5 {
+    grid-area: d5;
+  }
 }
