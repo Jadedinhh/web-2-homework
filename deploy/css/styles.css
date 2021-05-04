@@ -472,7 +472,12 @@ footer > div aside {
 }
 @media (min-width: 1024px) {
   #hero > div {
-    height: 900px;
+    height: 1000px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div {
+    height: 100vh;
   }
 }
 @media (min-width: 768px) {
@@ -593,13 +598,23 @@ footer > div aside {
     grid-template-areas: "meal letseat" "meal h2-3";
   }
 }
+#hero-2 ul li {
+  background-size: cover;
+  background-position: center;
+}
 #hero-2 ul li img {
   width: 100%;
+}
+#hero-2 ul #h2-1 {
+  background-image: url("../img/hero-2/meal.jpg");
 }
 @media (min-width: 1024px) {
   #hero-2 ul #h2-1 {
     grid-area: meal;
   }
+}
+#hero-2 ul #h2-2 {
+  background-image: url("../img/hero-2/letseat.jpg");
 }
 @media (min-width: 1024px) {
   #hero-2 ul #h2-2 {
@@ -607,6 +622,7 @@ footer > div aside {
   }
 }
 #hero-2 ul #h2-3 {
+  background-image: url("../img/hero-2/type-of-noods.jpg");
   display: none;
 }
 @media (min-width: 1200px) {

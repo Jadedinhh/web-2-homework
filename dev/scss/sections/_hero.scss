@@ -12,7 +12,11 @@
         }
 
         @include lg {
-            height: 900px;
+            height: 1000px;
+        }
+
+        @include xl{
+            height: 100vh;
         }
 
 
