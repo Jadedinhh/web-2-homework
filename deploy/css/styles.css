@@ -659,6 +659,10 @@ footer > div aside {
     grid-area: dishes;
   }
 }
+#dishes > div ul {
+  display: grid;
+  grid-template-rows: repeat(5, 380px);
+}
 @media (min-width: 768px) {
   #dishes > div ul {
     display: grid;
