@@ -579,6 +579,8 @@ footer > div aside {
 }
 #hero-2 ul {
   display: grid;
+  grid-template-rows: repeat(5, 176px);
+  grid-template-areas: "meal" "meal" "letseat" "letseat" "letseat";
 }
 @media (min-width: 768px) {
   #hero-2 ul {
@@ -601,9 +603,6 @@ footer > div aside {
 #hero-2 ul li {
   background-size: cover;
   background-position: center;
-}
-#hero-2 ul li img {
-  width: 100%;
 }
 #hero-2 ul #h2-1 {
   background-image: url("../img/hero-2/meal.jpg");
@@ -628,6 +627,7 @@ footer > div aside {
 @media (min-width: 1200px) {
   #hero-2 ul #h2-3 {
     display: list-item;
+    grid-area: h2-3;
   }
 }
 
@@ -666,6 +666,8 @@ footer > div aside {
   }
 }
 #dishes > div ul li {
+  height: 380px;
+  background-size: cover;
   background-color: #E0E0BB;
 }
 #dishes > div ul li img {
@@ -686,25 +688,40 @@ footer > div aside {
   background-color: #CB997E;
   color: #fff;
 }
+#dishes > div ul #d1 {
+  background-image: url("../img/dishes/one-pot-fet.jpg");
+}
 @media (min-width: 768px) {
   #dishes > div ul #d1 {
     grid-area: d1;
   }
+}
+#dishes > div ul #d2 {
+  background-image: url("../img/dishes/gnocchi.jpg");
 }
 @media (min-width: 768px) {
   #dishes > div ul #d2 {
     grid-area: d2;
   }
 }
+#dishes > div ul #d3 {
+  background-image: url("../img/dishes/tomato-spa.jpg");
+}
 @media (min-width: 768px) {
   #dishes > div ul #d3 {
     grid-area: d3;
   }
 }
+#dishes > div ul #d4 {
+  background-image: url("../img/dishes/oil-spa.jpg");
+}
 @media (min-width: 768px) {
   #dishes > div ul #d4 {
     grid-area: d4;
   }
+}
+#dishes > div ul #d5 {
+  background-image: url("../img/dishes/pestopasta.jpg");
 }
 @media (min-width: 768px) {
   #dishes > div ul #d5 {
