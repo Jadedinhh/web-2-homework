@@ -445,11 +445,15 @@ footer > div {
 footer > div section {
   grid-area: section;
 }
+footer > div section article {
+  color: #F4F4D8;
+}
 footer > div article {
   grid-area: article;
 }
 footer > div article button {
   background-color: #CB997E;
+  color: #fff;
 }
 footer > div aside {
   grid-area: aside;
