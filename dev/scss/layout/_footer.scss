@@ -5,9 +5,9 @@ footer {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
- @include xl{
-     grid-template-columns: auto 1200px auto;
- }
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
 
 
     >div {
@@ -33,13 +33,19 @@ footer {
         section {
             grid-area: section;
 
+            article {
+                color: $egg;
+            }
+
         }
 
         article {
             grid-area: article;
-            button{
-                        background-color: $chocomilk;
-                    }
+
+            button {
+                background-color: $chocomilk;
+                color: $white;
+            }
 
 
         }
