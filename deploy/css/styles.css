@@ -447,6 +447,9 @@ footer > div section {
 footer > div article {
   grid-area: article;
 }
+footer > div article button {
+  background-color: #CB997E;
+}
 footer > div aside {
   grid-area: aside;
 }
