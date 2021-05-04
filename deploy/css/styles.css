@@ -661,12 +661,10 @@ footer > div aside {
 }
 #dishes > div ul {
   display: grid;
-  grid-template-rows: repeat(5, 380px);
 }
 @media (min-width: 768px) {
   #dishes > div ul {
     display: grid;
-    grid-template-rows: repeat(3, 430px);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "d1 d1 d2 d2" "d3 d3 d4 d4" " . d5 d5 .";
     gap: 16px;
@@ -674,7 +672,6 @@ footer > div aside {
 }
 @media (min-width: 1024px) {
   #dishes > div ul {
-    grid-template-rows: repeat(2, 400px);
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "d1 d1 d2 d2 d3 d3" ". d4 d4 d5 d5 .";
   }
@@ -702,40 +699,25 @@ footer > div aside {
   background-color: #CB997E;
   color: #fff;
 }
-#dishes > div ul #d1 {
-  background-image: url("../img/dishes/one-pot-fet.jpg");
-}
 @media (min-width: 768px) {
   #dishes > div ul #d1 {
     grid-area: d1;
   }
-}
-#dishes > div ul #d2 {
-  background-image: url("../img/dishes/gnocchi.jpg");
 }
 @media (min-width: 768px) {
   #dishes > div ul #d2 {
     grid-area: d2;
   }
 }
-#dishes > div ul #d3 {
-  background-image: url("../img/dishes/tomato-spa.jpg");
-}
 @media (min-width: 768px) {
   #dishes > div ul #d3 {
     grid-area: d3;
   }
 }
-#dishes > div ul #d4 {
-  background-image: url("../img/dishes/oil-spa.jpg");
-}
 @media (min-width: 768px) {
   #dishes > div ul #d4 {
     grid-area: d4;
   }
-}
-#dishes > div ul #d5 {
-  background-image: url("../img/dishes/pestopasta.jpg");
 }
 @media (min-width: 768px) {
   #dishes > div ul #d5 {
