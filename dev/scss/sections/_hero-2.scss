@@ -7,17 +7,13 @@
     }
     ul{
         display: grid;
-         grid-template-rows: repeat(5, 300px);
-        grid-template-areas: "meal"
-                             "meal"
-                              "letseat"
-                              "letseat"
-                              "letseat";
+        grid-template-rows: 320px 800px;
+       
 
         @include md{
                 grid-template-columns: 50% auto;
                 // height: 800px;
-                grid-template-rows: repeat(2, 650px);
+                grid-template-rows: 650px;
                 grid-template-areas: "meal letseat"
                                     //  "meal letseat";
                 
@@ -35,7 +31,7 @@
         @include xl{
             grid-area: hero-2; 
             grid-template-columns: 65% auto;
-             grid-template-rows: repeat(2, 400px);
+             grid-template-rows: 377px 377px;
             grid-template-areas: "meal letseat"
                                  "meal h2-3";
         }
@@ -51,8 +47,10 @@
         }
         
         #h2-1{
-            grid-area: meal; 
-            background-image: url("../img/hero-2/meal.jpg");    
+           
+            background-image: url("../img/hero-2/meal.jpg");  
+            
+            
              @include lg{
                grid-area: meal; 
            }
@@ -61,9 +59,13 @@
             }
     
         #h2-2{
-            grid-area: letseat;
+           
             background-image: url("../img/hero-2/letseat.jpg");
-             @include lg{
+            @include md{
+                background-position: center -210px;
+
+            } 
+            @include lg{
                  grid-area: letseat;
              }
                 
