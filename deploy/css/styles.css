@@ -384,6 +384,7 @@ header {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   background-color: #3D4133;
+  color: #E0E0BB;
 }
 @media (min-width: 1200px) {
   header {
@@ -508,6 +509,7 @@ footer > div aside {
 }
 #search > div form button {
   background-color: #8B6956;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -537,12 +539,14 @@ footer > div aside {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". service-context .";
   background-color: #6B705C;
+  color: #fff;
 }
 #service ul li > div {
   grid-area: service-context;
 }
 #service ul li > div section div button {
   background-color: #CB997E;
+  color: #fff;
 }
 @media (min-width: 1200px) {
   #hero-2 {
@@ -606,6 +610,9 @@ footer > div aside {
     grid-template-columns: auto 1200px auto;
   }
 }
+#dishes > div h3 {
+  color: #5F5F50;
+}
 @media (min-width: 768px) {
   #dishes > div {
     grid-area: dishes;
@@ -639,8 +646,12 @@ footer > div aside {
 #dishes > div ul li section > div {
   grid-area: dishes-content;
 }
+#dishes > div ul li section > div h4 {
+  color: #3D4133;
+}
 #dishes > div ul li section > div button {
   background-color: #CB997E;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #dishes > div ul #d1 {
