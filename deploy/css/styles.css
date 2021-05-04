@@ -459,8 +459,21 @@ footer > div aside {
   grid-area: aside;
 }
 
-#hero img {
-  width: 100%;
+#hero > div {
+  background-image: url("../img/hero/fresh-fet.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+@media (min-width: 768px) {
+  #hero > div {
+    height: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div {
+    height: 900px;
+  }
 }
 @media (min-width: 768px) {
   #hero > ul {

@@ -1,50 +1,68 @@
 #hero {
-    img {
-        width: 100%;
+    >div {
+
+        background-image: url("../img/hero/fresh-fet.jpg");
+        background-position: center;
+        // background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+
+        @include md {
+            height: 700px;
+        }
+
+        @include lg {
+            height: 900px;
+        }
+
+
     }
-    
-    
-         
+
+
+
+
     >ul {
-        
-        @include md{
-                display: grid;
-                grid-template-columns: 40% auto;
-            }
-         @include lg{
-                grid-template-columns: 50% auto;
-            }
-        
-    
+
+        @include md {
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+
+        @include lg {
+            grid-template-columns: 50% auto;
+        }
+
+
         li {
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
 
-            @include xl{
+            @include xl {
                 grid-template-columns: auto 480px 16px;
             }
 
-        
+
             a {
                 grid-area: hero-content;
 
             }
 
         }
-         #h1{
-             background-color: $choco;
 
-         }
-         #h2{
-             background-color: $tan;
-             @include xl{
+        #h1 {
+            background-color: $choco;
+
+        }
+
+        #h2 {
+            background-color: $tan;
+
+            @include xl {
                 grid-template-columns: 16px 480px auto;
             }
-         }
+        }
     }
 
 
-    }
-   
-
+}
