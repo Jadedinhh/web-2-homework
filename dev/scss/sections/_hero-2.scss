@@ -7,12 +7,12 @@
     }
     ul{
         display: grid;
-        // grid-template-rows: repeat(5, 176px);
-        // grid-template-areas: "meal"
-        //                      "meal"
-        //                      "letseat"
-        //                      "letseat"
-        //                      ;
+         grid-template-rows: repeat(5, 176px);
+        grid-template-areas: "meal"
+                             "meal"
+                              "letseat"
+                              "letseat"
+                              "letseat";
 
         @include md{
                 grid-template-columns: 50% auto;
@@ -36,9 +36,9 @@
             // height: 230px;
             background-size: cover;
             background-position: center;
-            img{
-                width: 100%;
-            }
+            // img{
+            //     width: 100%;
+            // }
             
         }
         
@@ -64,6 +64,7 @@
             display: none;
             @include xl{
                 display: list-item;
+                grid-area: h2-3;
             }
         }
         

@@ -1,105 +1,121 @@
 #dishes {
-    @include md{
+    @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". dishes .";
     }
-    
-    @include xl{
+
+    @include xl {
         grid-template-columns: auto 1200px auto;
     }
 
-    >div{
-        h3{
+    >div {
+        h3 {
             color: $ung;
         }
-        @include md{
+
+        @include md {
             grid-area: dishes;
         }
 
-         ul {
-        @include md{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-areas: "d1 d1 d2 d2"
-                                 "d3 d3 d4 d4"
-                                 " . d5 d5 .";
-            gap: 16px;
-        }
-
-        @include lg{
-            grid-template-columns: repeat(6,1fr);
-            grid-template-areas: "d1 d1 d2 d2 d3 d3"
-                                 ". d4 d4 d5 d5 .";
-        }
-
-    
-        li {
-            background-color: $xanh;
-            img {
-                width: 100%;
-            }
-section {
+        ul {
+            @include md {
                 display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". dishes-content .";
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: "d1 d1 d2 d2"
+                    "d3 d3 d4 d4"
+                    " . d5 d5 .";
+                gap: 16px;
+            }
+
+            @include lg {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: "d1 d1 d2 d2 d3 d3"
+                    ". d4 d4 d5 d5 .";
+            }
 
 
-        
-                >div {
-                    grid-area: dishes-content;
-                    h4{
-                        color: $tree;
-                    }
+            li {
+                height: 380px;
+                background-size: cover;
+                background-color: $xanh;
 
-                    button{
-                        background-color: $chocomilk;
-                        color: $white;
-                    }
-
-                
-
+                img {
+                    width: 100%;
 
                 }
-            }
-        }
 
-        #d1{
-            @include md{
-                grid-area: d1;
-            }
-        }
-        #d2{
-            @include md{
-                grid-area: d2;
-            }
-        }
-        #d3{
-            @include md{
-                grid-area: d3;
-            }
-        }
-        #d4{
-            @include md{
-                grid-area: d4;
-            }
-        }
-        #d5{
-            @include md{
-                grid-area: d5;
-            }
-        }
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". dishes-content .";
 
-            
+
+
+                    >div {
+                        grid-area: dishes-content;
+
+                        h4 {
+                            color: $tree;
+                        }
+
+                        button {
+                            background-color: $chocomilk;
+                            color: $white;
+                        }
+
+
+
+
+                    }
+                }
+            }
+
+            #d1 {
+                background-image: url("../img/dishes/one-pot-fet.jpg");
+
+                @include md {
+                    grid-area: d1;
+                }
+            }
+
+            #d2 {
+                background-image: url("../img/dishes/gnocchi.jpg");
+
+                @include md {
+                    grid-area: d2;
+                }
+            }
+
+            #d3 {
+                background-image: url("../img/dishes/tomato-spa.jpg");
+
+                @include md {
+                    grid-area: d3;
+                }
+            }
+
+            #d4 {
+                background-image: url("../img/dishes/oil-spa.jpg");
+
+                @include md {
+                    grid-area: d4;
+                }
+            }
+
+            #d5 {
+                background-image: url("../img/dishes/pestopasta.jpg");
+
+                @include md {
+                    grid-area: d5;
+                }
+            }
+
+
 
         }
 
     }
-   
-    
-    }
 
 
-
-
-
+}
