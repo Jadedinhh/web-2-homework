@@ -405,7 +405,13 @@ header > div article {
   grid-area: article;
 }
 header > div section {
-  grid-area: section;
+  display: none;
+}
+@media (min-width: 768px) {
+  header > div section {
+    display: grid;
+    grid-area: section;
+  }
 }
 
 footer {
@@ -576,7 +582,7 @@ footer > div aside {
 }
 #hero-2 ul {
   display: grid;
-  grid-template-rows: 320px 800px;
+  grid-template-rows: 550px 800px;
 }
 @media (min-width: 768px) {
   #hero-2 ul {
@@ -602,9 +608,6 @@ footer > div aside {
 #hero-2 ul li {
   background-size: cover;
   background-position: center;
-}
-#hero-2 ul li img {
-  width: 100%;
 }
 #hero-2 ul #h2-1 {
   background-image: url("../img/hero-2/meal.jpg");

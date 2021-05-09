@@ -26,7 +26,12 @@ header{
         }
 
         section{
-            grid-area: section;
+            display: none;
+
+             @include md{
+                 display: grid;
+                 grid-area: section;
+             }
 
         }
     }
