@@ -4,6 +4,16 @@
         width: 100%;
     }
 
+    a:link,
+    a:visited {
+        color: $white;
+        transition: 0.25s;
+    }
+
+    a:hover,
+    a:active {
+        color: $tree;
+    }
 
 
     >ul {
@@ -31,6 +41,8 @@
             a {
                 grid-area: hero-content;
 
+
+
                 div {
                     h3 {
                         font-family: 'Halant', serif;
@@ -51,7 +63,16 @@
                             display: grid;
 
                         }
+
+                        // p {
+                        //     span {
+                        //         display: inline;
+                        //         font-weight: 500;
+                        //     }
+                        // }
                     }
+
+
                 }
 
             }

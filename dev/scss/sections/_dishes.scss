@@ -28,7 +28,7 @@
         ul {
             display: grid;
             // grid-template-rows: repeat(5,380px);
-            
+            gap: 16px;
         
             @include md {
                 display: grid;
