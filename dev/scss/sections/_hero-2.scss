@@ -1,84 +1,84 @@
-#hero-2{
-    
-    @include xl{
+#hero-2 {
+
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". hero-2 .";
     }
-    ul{
+
+    ul {
         display: grid;
-        grid-template-rows: 320px 800px;
-       
+        grid-template-rows: 550px 800px;
 
-        @include md{
-                grid-template-columns: 50% auto;
-                // height: 800px;
-                grid-template-rows: 650px;
-                grid-template-areas: "meal letseat"
-                                    //  "meal letseat";
-                
-            }
 
-        @include lg{
+        @include md {
+            grid-template-columns: 50% auto;
+            // height: 800px;
+            grid-template-rows: 650px;
+            grid-template-areas: "meal letseat";
+
+        }
+
+        @include lg {
             grid-template-columns: 16px 55% auto 16px;
             // grid-template-rows: repeat(2, 650px);
             grid-template-areas: ". meal letseat ."
-                                //  ". meal letseat .";
-        
-        
+                //  ". meal letseat .";
+
+
         }
 
-        @include xl{
-            grid-area: hero-2; 
+        @include xl {
+            grid-area: hero-2;
             grid-template-columns: 65% auto;
-             grid-template-rows: 377px 377px;
+            grid-template-rows: 377px 377px;
             grid-template-areas: "meal letseat"
                                  "meal h2-3";
         }
 
-        li{
+        li {
             // height: 230px;
             background-size: cover;
             background-position: center;
-            img{
-                width: 100%;
-            }
-            
+
         }
-        
-        #h2-1{
-           
-            background-image: url("../img/hero-2/meal.jpg");  
-            
-            
-             @include lg{
-               grid-area: meal; 
-           }
-           
-    
+
+        #h2-1 {
+
+            background-image: url("../img/hero-2/meal.jpg");
+
+
+            @include lg {
+                grid-area: meal;
             }
-    
-        #h2-2{
-           
+
+
+        }
+
+        #h2-2 {
+
             background-image: url("../img/hero-2/letseat.jpg");
-            @include md{
+
+            @include md {
                 background-position: center -210px;
 
-            } 
-            @include lg{
-                 grid-area: letseat;
-             }
-                
             }
 
-        #h2-3{
+            @include lg {
+                grid-area: letseat;
+            }
+
+        }
+
+        #h2-3 {
             background-image: url("../img/hero-2/type-of-noods.jpg");
             display: none;
-            @include xl{
+
+            @include xl {
                 display: list-item;
                 grid-area: h2-3;
             }
         }
-        
+
     }
 }
