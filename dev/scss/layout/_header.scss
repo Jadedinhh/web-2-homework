@@ -33,6 +33,21 @@ header{
                  grid-area: section;
              }
 
+             h1{
+                font-family: 'Halant', serif;
+                font-weight: 700;
+                font-size: rem-calc(23);
+
+                @include lg{
+                    font-size: rem-calc(33);
+                }
+             }
+
+             h5{
+                 font-weight: 400;
+                 font-size: rem-calc(13);
+             }
+
         }
     }
 }

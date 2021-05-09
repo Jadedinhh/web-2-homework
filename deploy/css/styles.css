@@ -417,6 +417,20 @@ header > div section {
     grid-area: section;
   }
 }
+header > div section h1 {
+  font-family: "Halant", serif;
+  font-weight: 700;
+  font-size: 1.4375rem;
+}
+@media (min-width: 1024px) {
+  header > div section h1 {
+    font-size: 2.0625rem;
+  }
+}
+header > div section h5 {
+  font-weight: 400;
+  font-size: 0.8125rem;
+}
 
 footer {
   background-color: #5F5F50;
@@ -464,6 +478,9 @@ footer > div article {
 footer > div article button {
   background-color: #CB997E;
   color: #fff;
+  font-weight: 800;
+  font-size: 0.875rem;
+  border: none;
 }
 footer > div aside {
   grid-area: aside;
@@ -497,6 +514,22 @@ footer > div aside {
 #hero > ul li a {
   grid-area: hero-content;
 }
+#hero > ul li a div h3 {
+  font-family: "Halant", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+#hero > ul li a div h5 {
+  font-family: "Halant", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #hero > ul li a div h5 {
+    display: grid;
+  }
+}
 #hero > ul #h1 {
   background-color: #8B6956;
 }
@@ -521,6 +554,9 @@ footer > div aside {
 }
 #search > div {
   grid-area: search;
+}
+#search > div form input {
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   #search > div form input {
