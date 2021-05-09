@@ -94,6 +94,14 @@ footer {
                     font-weight: 800;
                     font-size: rem-calc(14);
                     border: none;
+                    padding: 5px 8px;
+                    transition: 0.25s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
                 }
             }
 

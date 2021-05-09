@@ -513,6 +513,13 @@ footer > div article form button {
   font-weight: 800;
   font-size: 0.875rem;
   border: none;
+  padding: 5px 8px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+footer > div article form button:hover {
+  background-color: #000;
+  color: #fff;
 }
 footer > div aside {
   grid-area: aside;
@@ -677,6 +684,13 @@ footer > div aside {
   font-weight: 800;
   font-size: 0.875rem;
   border: none;
+  padding: 5px 8px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#service ul li > div section div button:hover {
+  background-color: #000;
+  color: #fff;
 }
 #service ul li > div aside div {
   background-position: center;
@@ -832,6 +846,13 @@ footer > div aside {
   font-weight: 800;
   font-size: 0.875rem;
   border: none;
+  padding: 5px 8px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#dishes > div ul li section > div button:hover {
+  background-color: #000;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #dishes > div ul #d1 {
