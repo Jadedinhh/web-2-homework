@@ -536,6 +536,15 @@ footer > div aside {
 #search > div form button {
   background-color: #8B6956;
   color: #fff;
+  font-weight: 200;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 3.5px;
+}
+@media (min-width: 768px) {
+  #search > div form button {
+    font-size: 1.875rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -570,9 +579,27 @@ footer > div aside {
 #service ul li > div {
   grid-area: service-context;
 }
+#service ul li > div section div h3 {
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+@media (min-width: 768px) {
+  #service ul li > div section div h3 {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #service ul li > div section div h3 {
+    font-size: 1.9375rem;
+  }
+}
 #service ul li > div section div button {
   background-color: #CB997E;
   color: #fff;
+  font-weight: 800;
+  font-size: 0.875rem;
+  border: none;
 }
 #service ul li > div aside div {
   background-position: center;
@@ -715,6 +742,9 @@ footer > div aside {
 #dishes > div ul li section > div button {
   background-color: #CB997E;
   color: #fff;
+  font-weight: 800;
+  font-size: 0.875rem;
+  border: none;
 }
 @media (min-width: 768px) {
   #dishes > div ul #d1 {

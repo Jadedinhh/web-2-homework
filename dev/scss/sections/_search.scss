@@ -29,6 +29,14 @@
              button{
                  background-color: $choco;
                  color: $white;
+                 font-weight: 200;
+                 font-size: rem-calc(18);
+                 border: none;
+                 border-radius: 3.5px;
+
+                 @include md{
+                     font-size: rem-calc(30);
+                 }
              }
         }
     }
