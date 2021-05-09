@@ -794,8 +794,6 @@ footer > div aside {
   }
 }
 #dishes > div ul li {
-  background-size: cover;
-  background-position: center;
   background-color: #E0E0BB;
 }
 #dishes > div ul li img {
