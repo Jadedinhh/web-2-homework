@@ -522,6 +522,17 @@ footer > div aside {
 #search > div {
   grid-area: search;
 }
+@media (min-width: 768px) {
+  #search > div form input {
+    font-size: 1.875rem;
+    font-weight: 200;
+    color: #8E7869;
+  }
+  #search > div form input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8E7869;
+  }
+}
 #search > div form button {
   background-color: #8B6956;
   color: #fff;
