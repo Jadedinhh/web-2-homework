@@ -12,6 +12,13 @@
     >div {
         h3 {
             color: $ung;
+            font-family: 'Halant', serif;
+            font-weight: 600;
+            font-size: rem-calc(20);
+
+            @include lg{
+                font-size: rem-calc(37);
+            }
         }
 
         @include md {
@@ -64,6 +71,9 @@
 
                         h4 {
                             color: $tree;
+                            font-family: 'Halant', serif;
+                            font-weight: 600;
+                            font-size: rem-calc(27);
                         }
 
                         button {
@@ -79,24 +89,20 @@
             }
 
             #d1 {
-                // background-image: url("../img/dishes/one-pot-fet.jpg");
-               
-
+            
                 @include md {
                     grid-area: d1;
                 }
             }
 
             #d2 {
-                // background-image: url("../img/dishes/gnocchi.jpg");
-
+               
                 @include md {
                     grid-area: d2;
                 }
             }
 
             #d3 {
-                // background-image: url("../img/dishes/tomato-spa.jpg");
 
                 @include md {
                     grid-area: d3;
@@ -104,16 +110,14 @@
             }
 
             #d4 {
-                // background-image: url("../img/dishes/oil-spa.jpg");
-
+             
                 @include md {
                     grid-area: d4;
                 }
             }
 
             #d5 {
-                // background-image: url("../img/dishes/pestopasta.jpg");
-
+        
                 @include md {
                     grid-area: d5;
                 }

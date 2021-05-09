@@ -447,6 +447,11 @@ footer {
 footer > div {
   grid-area: footer;
 }
+footer > div h3 {
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
 @media (min-width: 768px) {
   footer > div {
     display: grid;
@@ -472,10 +477,26 @@ footer > div section {
 footer > div section article {
   color: #F4F4D8;
 }
+footer > div section article h4 {
+  font-family: "Halant", serif;
+  font-weight: 600;
+}
+footer > div section article ul li div {
+  color: #DDBEA9;
+}
 footer > div article {
   grid-area: article;
 }
-footer > div article button {
+footer > div article form input {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #8E7869;
+}
+footer > div article form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8E7869;
+}
+footer > div article form button {
   background-color: #CB997E;
   color: #fff;
   font-weight: 800;
@@ -733,6 +754,14 @@ footer > div aside {
 }
 #dishes > div h3 {
   color: #5F5F50;
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+@media (min-width: 1024px) {
+  #dishes > div h3 {
+    font-size: 2.3125rem;
+  }
 }
 @media (min-width: 768px) {
   #dishes > div {
@@ -774,6 +803,9 @@ footer > div aside {
 }
 #dishes > div ul li section > div h4 {
   color: #3D4133;
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-size: 1.6875rem;
 }
 #dishes > div ul li section > div button {
   background-color: #CB997E;
