@@ -148,28 +148,28 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/service\/fresh-penne.png" : {
-      "ft" : 32768,
-      "iS" : 21650,
+    "\/deploy\/img\/service\/fresh-penne.jpeg" : {
+      "ft" : 16384,
+      "iS" : 92781,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/service\/fresh-penne.png",
+      "oAP" : "\/deploy\/img\/service\/fresh-penne.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/service\/fussili.png" : {
-      "ft" : 32768,
-      "iS" : 25650,
+    "\/deploy\/img\/service\/fussili.jpg" : {
+      "ft" : 16384,
+      "iS" : 36234,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/service\/fussili.png",
+      "oAP" : "\/deploy\/img\/service\/fussili.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

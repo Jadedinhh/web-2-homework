@@ -553,6 +553,20 @@ footer > div aside {
   background-color: #CB997E;
   color: #fff;
 }
+#service ul li > div aside div {
+  background-position: center;
+  border: 4px #fff solid;
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
+#service ul li > div aside #service-left {
+  background-image: url(../img/service/fresh-penne.jpeg);
+}
+#service ul li > div aside #service-right {
+  background-image: url(../img/service/fussili.jpg);
+}
+
 @media (min-width: 1200px) {
   #hero-2 {
     display: grid;

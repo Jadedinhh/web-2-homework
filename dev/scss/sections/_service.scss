@@ -40,6 +40,22 @@
                 }
 
                 aside{
+                    div{
+                        background-position: center;
+                        border: 4px $white solid;
+                        height: 85px;
+                        width: 85px;
+                        border-radius: 100%;
+                    }
+
+                    #service-left{
+                        background-image: url(../img/service/fresh-penne.jpeg);
+
+                    }
+                    #service-right{
+                        background-image: url(../img/service/fussili.jpg);
+
+                    }
 
                 }
             }
