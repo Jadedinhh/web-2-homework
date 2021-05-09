@@ -1,27 +1,8 @@
 #hero {
-    >div {
-
-        background-image: url("../img/hero/fresh-fet.jpg");
-        background-position: center;
-        // background-repeat: no-repeat;
-        background-size: cover;
-        height: 400px;
-
-        @include md {
-            height: 700px;
-        }
-
-        @include lg {
-            height: 1000px;
-        }
-
-        @include xl{
-            height: 100vh;
-        }
-
-
+    img{
+        object-fit: cover;
+        width: 100%;
     }
-
 
 
 
