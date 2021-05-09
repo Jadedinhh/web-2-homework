@@ -1,5 +1,5 @@
 #hero {
-    img{
+    img {
         object-fit: cover;
         width: 100%;
     }
@@ -30,6 +30,29 @@
 
             a {
                 grid-area: hero-content;
+
+                div {
+                    h3 {
+                        font-family: 'Halant', serif;
+                        font-weight: 700;
+                        font-size: rem-calc(18);
+                    }
+                }
+
+                div {
+                    h5 {
+                        font-family: 'Halant', serif;
+                        font-weight: 700;
+                        font-size: rem-calc(18);
+
+                        display: none;
+
+                        @include lg {
+                            display: grid;
+
+                        }
+                    }
+                }
 
             }
 
