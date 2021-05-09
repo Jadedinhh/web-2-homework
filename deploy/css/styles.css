@@ -356,17 +356,6 @@ body {
   font-family: "Halant", serif;
   font-family: "Nunito Sans", sans-serif;
 }
-body h1, body h2, body h3, body h4, body h5, body h6 {
-  padding: 0;
-  margin: 0;
-}
-body p {
-  padding: 0;
-  margin: 0;
-}
-body a {
-  text-decoration: none;
-}
 body figure {
   padding: 0;
   margin: 0;
@@ -382,6 +371,20 @@ body ul li {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* =============
     Buttons
 ============= */
@@ -604,16 +607,16 @@ footer > div aside {
   grid-area: search;
 }
 #search > div form input {
-  font-weight: 400;
+  font-weight: 300;
+}
+#search > div form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8E7869;
 }
 @media (min-width: 768px) {
   #search > div form input {
     font-size: 1.875rem;
     font-weight: 200;
-    color: #8E7869;
-  }
-  #search > div form input::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #8E7869;
   }
 }
@@ -624,6 +627,13 @@ footer > div aside {
   font-size: 1.125rem;
   border: none;
   border-radius: 3.5px;
+  padding: 5px 9px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#search > div form button:hover {
+  background-color: #000;
+  color: #fff;
 }
 @media (min-width: 768px) {
   #search > div form button {

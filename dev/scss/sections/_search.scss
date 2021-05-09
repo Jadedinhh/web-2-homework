@@ -13,17 +13,19 @@
 
         form{
              input{
-                 font-weight: 400;
+                 font-weight: 300;
+                
+                 &::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $burnt;
+                      
+                    }
                  @include md{
                      font-size: rem-calc(30);
                      font-weight: 200;
                      color: $burnt;
 
-                     &::placeholder {
-                        /* Chrome, Firefox, Opera, Safari 10.1+ */
-                        color: $burnt;
-                      
-                    }
+                     
                  }
 
              }
@@ -34,6 +36,14 @@
                  font-size: rem-calc(18);
                  border: none;
                  border-radius: 3.5px;
+                 padding: 5px 9px;
+                    transition: 0.25s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
 
                  @include md{
                      font-size: rem-calc(30);
