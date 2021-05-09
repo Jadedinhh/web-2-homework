@@ -13,6 +13,13 @@ footer {
     >div {
         grid-area: footer;
 
+        h3 {
+            font-family: 'Halant', serif;
+            font-weight: 600;
+            font-size: rem-calc(20);
+        }
+
+
         @include md {
             display: grid;
             grid-template-columns: 50% auto;
@@ -39,16 +46,54 @@ footer {
 
         }
 
+        section {
+
+
+            article {
+                h4 {
+                    font-family: 'Halant', serif;
+                    font-weight: 600;
+
+                }
+
+                ul {
+                    li {
+                        div {
+                            color: $acorn;
+                        }
+                    }
+                }
+            }
+        }
+
         article {
             grid-area: article;
 
-            button {
-                background-color: $chocomilk;
-                color: $white;
-                font-weight: 800;
-                font-size: rem-calc(14);
-                border: none;
+            form {
+                input {
+                    font-weight: 400;
+                    font-size: rem-calc(14);
+                    color: $burnt;
+
+                    &::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $burnt;
+
+                    }
+
+
+                }
+
+                button {
+                    background-color: $chocomilk;
+                    color: $white;
+                    font-weight: 800;
+                    font-size: rem-calc(14);
+                    border: none;
+                }
             }
+
+
 
 
         }
