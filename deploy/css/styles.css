@@ -455,6 +455,10 @@ footer {
   grid-template-areas: ". footer .";
   padding: 16px 0px;
 }
+footer h4 {
+  font-family: "Halant", serif;
+  font-weight: 600;
+}
 @media (min-width: 768px) {
   footer {
     padding-bottom: 24px 0px;
@@ -477,47 +481,41 @@ footer > div h3 {
   footer > div {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "section article" ". aside";
+    grid-template-areas: "locations sign-up" "locations follow";
   }
 }
 @media (min-width: 1024px) {
   footer > div {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "section article aside";
+    grid-template-areas: "locations sign-up follow";
   }
 }
-@media (min-width: 1200px) {
-  footer > div {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "section article aside";
-  }
-}
-footer > div section {
-  grid-area: section;
-}
-footer > div section article {
+footer > div #locations section {
   color: #F4F4D8;
 }
-footer > div section article h4 {
-  font-family: "Halant", serif;
-  font-weight: 600;
-}
-footer > div section article ul li div {
+footer > div #locations section ul li i {
   color: #DDBEA9;
 }
-footer > div article {
-  grid-area: article;
+@media (min-width: 768px) {
+  footer > div #locations {
+    grid-area: locations;
+  }
 }
-footer > div article form input {
+@media (min-width: 768px) {
+  footer > div #sign-up {
+    grid-area: sign-up;
+  }
+}
+footer > div #sign-up form input {
   font-weight: 400;
   font-size: 0.875rem;
   color: #8E7869;
 }
-footer > div article form input::placeholder {
+footer > div #sign-up form input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #8E7869;
 }
-footer > div article form button {
+footer > div #sign-up form button {
   background-color: #CB997E;
   color: #fff;
   font-weight: 800;
@@ -527,12 +525,14 @@ footer > div article form button {
   transition: 0.25s;
   cursor: pointer;
 }
-footer > div article form button:hover {
+footer > div #sign-up form button:hover {
   background-color: #000;
   color: #fff;
 }
-footer > div aside {
-  grid-area: aside;
+@media (min-width: 768px) {
+  footer > div #follow {
+    grid-area: follow;
+  }
 }
 
 #hero {
