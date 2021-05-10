@@ -528,6 +528,9 @@ footer > div aside {
   grid-area: aside;
 }
 
+#hero {
+  margin-bottom: 24px;
+}
 #hero img {
   object-fit: cover;
   width: 100%;
@@ -540,6 +543,21 @@ footer > div aside {
 #hero a:hover,
 #hero a:active {
   color: #3D4133;
+}
+@media (min-width: 768px) {
+  #hero {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    margin-bottom: 64px;
+  }
 }
 @media (min-width: 768px) {
   #hero > ul {
@@ -556,6 +574,12 @@ footer > div aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  #hero > ul li {
+    padding: 24px;
+  }
 }
 @media (min-width: 1200px) {
   #hero > ul li {
