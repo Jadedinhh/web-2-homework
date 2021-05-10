@@ -38,6 +38,7 @@ header{
                 font-family: 'Halant', serif;
                 font-weight: 700;
                 font-size: rem-calc(23);
+                margin-bottom: -10px;
 
                 @include lg{
                     font-size: rem-calc(33);
