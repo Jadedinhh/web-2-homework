@@ -6,9 +6,15 @@ footer {
     grid-template-areas: ". footer .";
     padding: 16px 0px;
 
-                @include md{
-                    padding-bottom: 24px 0px;
-                }
+    h4 {
+        font-family: 'Halant', serif;
+        font-weight: 600;
+
+    }
+
+    @include md {
+        padding-bottom: 24px 0px;
+    }
 
     @include xl {
         grid-template-columns: auto 1200px auto;
@@ -28,55 +34,40 @@ footer {
         @include md {
             display: grid;
             grid-template-columns: 50% auto;
-            grid-template-areas: "section article"
-                ". aside";
+            grid-template-areas: "locations sign-up"
+                "locations follow";
         }
 
         @include lg {
             grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: "section article aside";
+            grid-template-areas: "locations sign-up follow";
         }
 
-        @include xl {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: "section article aside";
-        }
 
-        section {
-            grid-area: section;
 
-            article {
+        #locations {
+
+            section {
                 color: $egg;
-                // address{
-                //     font-weight: 300
-                //     ;
-                // }
-            }
-
-        }
-
-        section {
-
-
-            article {
-                h4 {
-                    font-family: 'Halant', serif;
-                    font-weight: 600;
-
-                }
 
                 ul {
                     li {
-                        div {
+                        i {
                             color: $acorn;
                         }
                     }
                 }
             }
+
+            @include md {
+                grid-area: locations;
+            }
         }
 
-        article {
-            grid-area: article;
+        #sign-up {
+            @include md {
+                grid-area: sign-up;
+            }
 
             form {
                 input {
@@ -87,10 +78,7 @@ footer {
                     &::placeholder {
                         /* Chrome, Firefox, Opera, Safari 10.1+ */
                         color: $burnt;
-
                     }
-
-
                 }
 
                 button {
@@ -110,12 +98,16 @@ footer {
                 }
             }
 
-
         }
 
-        aside {
-            grid-area: aside;
-
+        #follow {
+            @include md {
+                grid-area: follow;
+            }
         }
+
+
     }
+
+
 }
