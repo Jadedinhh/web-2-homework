@@ -4,6 +4,11 @@ footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+    padding: 16px 0px;
+
+                @include md{
+                    padding-bottom: 24px 0px;
+                }
 
     @include xl {
         grid-template-columns: auto 1200px auto;

@@ -43,10 +43,10 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
-            padding: 16px;
+            padding: 16px 0px;
 
             @include md{
-                padding: 24px;
+                padding: 24px 0px;
             }
             
 

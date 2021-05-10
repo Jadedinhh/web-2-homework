@@ -7,6 +7,7 @@ header{
     grid-template-areas: ". header .";
     background-color: $tree;
     color: $xanh;
+    padding: 16px 0px;
 
     @include xl{
      grid-template-columns: auto 1200px auto;
