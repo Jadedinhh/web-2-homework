@@ -860,7 +860,7 @@ footer > div aside {
 }
 @media (min-width: 1200px) {
   #dishes {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #dishes > div h3 {
@@ -945,28 +945,116 @@ footer > div aside {
   background-color: #000;
   color: #fff;
 }
+#dishes > div ul #d1 h4 {
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+#dishes > div ul #d1 p {
+  margin-bottom: 11px;
+}
 @media (min-width: 768px) {
   #dishes > div ul #d1 {
     grid-area: d1;
   }
+  #dishes > div ul #d1 h4 {
+    margin-top: 20px;
+    margin-bottom: 46px;
+  }
+  #dishes > div ul #d1 p {
+    margin-bottom: 41px;
+  }
+}
+@media (min-width: 1024px) {
+  #dishes > div ul #d1 h4 {
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  #dishes > div ul #d1 p {
+    margin-bottom: 20px;
+  }
+}
+#dishes > div ul #d2 h4 {
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+#dishes > div ul #d2 p {
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   #dishes > div ul #d2 {
     grid-area: d2;
   }
+  #dishes > div ul #d2 h4 {
+    margin-top: 20px;
+    margin-bottom: 14px;
+  }
+  #dishes > div ul #d2 p {
+    margin-bottom: 61px;
+  }
+}
+@media (min-width: 1024px) {
+  #dishes > div ul #d2 h4 {
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  #dishes > div ul #d2 p {
+    margin-bottom: 59px;
+  }
+}
+#dishes > div ul #d3 h4 {
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+#dishes > div ul #d3 p {
+  margin-bottom: 11px;
 }
 @media (min-width: 768px) {
   #dishes > div ul #d3 {
     grid-area: d3;
   }
+  #dishes > div ul #d3 h4 {
+    margin-top: 20px;
+    margin-bottom: 14px;
+  }
+  #dishes > div ul #d3 p {
+    margin-bottom: 21px;
+  }
+}
+#dishes > div ul #d4 h4 {
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+#dishes > div ul #d4 p {
+  margin-bottom: 31px;
 }
 @media (min-width: 768px) {
   #dishes > div ul #d4 {
     grid-area: d4;
   }
+  #dishes > div ul #d4 h4 {
+    margin-top: 20px;
+    margin-bottom: 14px;
+  }
+  #dishes > div ul #d4 p {
+    margin-bottom: 40px;
+  }
+}
+#dishes > div ul #d5 h4 {
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+#dishes > div ul #d5 p {
+  margin-bottom: 31px;
 }
 @media (min-width: 768px) {
   #dishes > div ul #d5 {
     grid-area: d5;
+  }
+  #dishes > div ul #d5 h4 {
+    margin-top: 20px;
+    margin-bottom: 14px;
+  }
+  #dishes > div ul #d5 p {
+    margin-bottom: 41px;
   }
 }
