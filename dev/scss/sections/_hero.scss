@@ -58,14 +58,19 @@
 
             a {
                 grid-area: hero-content;
+               
 
+                .details { 
+                    display: flex;
+                    margin-left: auto;
+                    
+                
 
-                div {
                     h5 {
                         font-family: 'Halant', serif;
                         font-weight: 700;
                         font-size: rem-calc(18);
-
+                        margin-left: 100px;
                         display: none;
 
                         @include lg {
@@ -74,6 +79,12 @@
                         }
 
                     }
+                    i{
+                    margin-left: auto;
+                    align-items: center;
+
+                    }
+
 
 
                 }
@@ -93,6 +104,14 @@
                     font-size: rem-calc(25);
                 }
             }
+            p{
+                font-weight: 500;
+
+            }
+
+            h5{
+                margin-left: auto;
+            }
 
         }
 
@@ -100,6 +119,10 @@
             background-color: $tan;
             h4{
                 margin-bottom: 5px;
+
+            }
+            p{
+                font-weight: 400;
 
             }
             

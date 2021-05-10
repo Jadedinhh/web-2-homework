@@ -625,16 +625,25 @@ footer > div #follow ul li a:active {
 #hero > ul li a {
   grid-area: hero-content;
 }
-#hero > ul li a div h5 {
+#hero > ul li a .details {
+  display: flex;
+  margin-left: auto;
+}
+#hero > ul li a .details h5 {
   font-family: "Halant", serif;
   font-weight: 700;
   font-size: 1.125rem;
+  margin-left: 100px;
   display: none;
 }
 @media (min-width: 1024px) {
-  #hero > ul li a div h5 {
+  #hero > ul li a .details h5 {
     display: grid;
   }
+}
+#hero > ul li a .details i {
+  margin-left: auto;
+  align-items: center;
 }
 #hero > ul #h1 {
   background-color: #8B6956;
@@ -650,11 +659,20 @@ footer > div #follow ul li a:active {
     font-size: 1.5625rem;
   }
 }
+#hero > ul #h1 p {
+  font-weight: 500;
+}
+#hero > ul #h1 h5 {
+  margin-left: auto;
+}
 #hero > ul #h2 {
   background-color: #D5A57F;
 }
 #hero > ul #h2 h4 {
   margin-bottom: 5px;
+}
+#hero > ul #h2 p {
+  font-weight: 400;
 }
 @media (min-width: 1200px) {
   #hero > ul #h2 {
