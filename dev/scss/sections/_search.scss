@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
+    margin: 16px 0;
     
     @include xl{
         grid-template-columns: auto 1000px auto;

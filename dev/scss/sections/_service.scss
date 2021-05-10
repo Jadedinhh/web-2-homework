@@ -37,6 +37,10 @@
             color: $white;
             padding: 16px 0px;
 
+            @include md{
+                padding: 24px 0px;
+            }
+
             >div {
                 grid-area: service-context;
                 
@@ -47,6 +51,7 @@
                             font-family: 'Halant', serif;
                             font-weight: 600;
                             font-size: rem-calc(22);
+                            margin-bottom: 10px;
 
                             @include md{
                                 font-size: rem-calc(29);
