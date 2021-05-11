@@ -625,6 +625,7 @@ footer > div #follow ul li a:active {
   margin-bottom: 24px;
 }
 #hero img {
+  display: block;
   object-fit: cover;
   width: 100%;
 }
