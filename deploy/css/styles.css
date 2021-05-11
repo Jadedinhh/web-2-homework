@@ -547,6 +547,7 @@ footer > div #sign-up h3 {
 @media (min-width: 768px) {
   footer > div #sign-up {
     grid-area: sign-up;
+    text-align: center;
   }
 }
 footer > div #sign-up form input {
@@ -584,7 +585,7 @@ footer > div #sign-up form button {
   cursor: pointer;
   margin-top: 15px;
   display: flex;
-  margin-left: 356px;
+  margin-left: auto;
 }
 footer > div #sign-up form button:hover {
   background-color: #000;
@@ -593,6 +594,7 @@ footer > div #sign-up form button:hover {
 @media (min-width: 768px) {
   footer > div #follow {
     grid-area: follow;
+    text-align: right;
   }
 }
 footer > div #follow ul {
