@@ -678,6 +678,7 @@ footer > div #follow ul li a:active {
 #hero > ul li a .details {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 #hero > ul li a .details h5 {
   font-family: "Halant", serif;
@@ -692,8 +693,7 @@ footer > div #follow ul li a:active {
   }
 }
 #hero > ul li a .details i {
-  margin-left: auto;
-  align-items: center;
+  margin-left: 5px;
 }
 #hero > ul #h1 {
   background-color: #8B6956;
@@ -833,6 +833,12 @@ footer > div #follow ul li a:active {
   color: #fff;
   padding: 16px 0px;
 }
+#service ul li .serve {
+  display: flex;
+}
+#service ul li .serve aside {
+  margin-left: auto;
+}
 @media (min-width: 768px) {
   #service ul li {
     padding: 24px 0px;
@@ -866,6 +872,7 @@ footer > div #follow ul li a:active {
   padding: 5px 8px;
   transition: 0.25s;
   cursor: pointer;
+  margin-top: 9px;
 }
 #service ul li > div section div button:hover {
   background-color: #000;
