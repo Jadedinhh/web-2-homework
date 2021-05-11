@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
-    margin: 16px 0;
+    
+    
     
     @include xl{
         grid-template-columns: auto 1000px auto;
@@ -13,9 +14,15 @@
         grid-area: search;
 
         form{
+            
+            padding: 24px 16px;
              input{
                  font-weight: 300;
                 //  border: $xanh;
+                padding-right: 40%;
+                border-top: none;
+                border-bottom: $xanh;
+                
                 
                  &::placeholder {
                         /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -41,6 +48,7 @@
                  padding: 5px 9px;
                 transition: 0.25s;
                 cursor: pointer;
+                display: inline-block;
 
                     &:hover {
                         background-color: $black;
