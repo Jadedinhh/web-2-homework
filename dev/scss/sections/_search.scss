@@ -18,13 +18,11 @@
             padding: 24px 16px;
              input{
                  font-weight: 300;
-                //  border: $xanh;
-                padding-right: 40%;
                 border-color: $xanh;
                 border-top: none;
                 border-left: none;
                 border-right: none;
-                
+                width: 87%;
                 
                  &::placeholder {
                         /* Chrome, Firefox, Opera, Safari 10.1+ */
