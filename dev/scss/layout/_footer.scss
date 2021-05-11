@@ -182,6 +182,10 @@ footer {
 
             ul {
                 display: flex;
+
+                @include md {
+                    text-align: right;
+                }
                 
 
                 li {

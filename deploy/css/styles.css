@@ -518,6 +518,8 @@ footer > div #locations h4 {
 footer > div #locations section {
   color: #F4F4D8;
   margin-bottom: 32px;
+  border-bottom: 2px;
+  border-color: #F4F4D8;
 }
 footer > div #locations section ul li i {
   color: #DDBEA9;
@@ -599,6 +601,11 @@ footer > div #sign-up form button:hover {
 }
 footer > div #follow ul {
   display: flex;
+}
+@media (min-width: 768px) {
+  footer > div #follow ul {
+    text-align: right;
+  }
 }
 footer > div #follow ul li {
   margin: 0 5px;
