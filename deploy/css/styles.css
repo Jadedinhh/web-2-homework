@@ -918,7 +918,7 @@ footer > div #follow ul li a:active {
 @media (min-width: 768px) {
   #hero-2 ul {
     grid-template-columns: 50% auto;
-    grid-template-rows: 650px;
+    grid-template-rows: 600px;
     grid-template-areas: "meal letseat";
     margin-bottom: 40px;
   }
@@ -954,14 +954,10 @@ footer > div #follow ul li a:active {
 #hero-2 ul #h2-2 {
   background-image: url("../img/hero-2/letseat.jpg");
 }
-@media (min-width: 768px) {
-  #hero-2 ul #h2-2 {
-    background-position: center -210px;
-  }
-}
 @media (min-width: 1024px) {
   #hero-2 ul #h2-2 {
     grid-area: letseat;
+    background-position: center -210px;
   }
 }
 #hero-2 ul #h2-3 {

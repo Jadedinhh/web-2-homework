@@ -15,7 +15,7 @@
         @include md {
             grid-template-columns: 50% auto;
             // height: 800px;
-            grid-template-rows: 650px;
+            grid-template-rows: 600px;
             grid-template-areas: "meal letseat";
             margin-bottom: 40px;
 
@@ -63,13 +63,11 @@
 
             background-image: url("../img/hero-2/letseat.jpg");
 
-            @include md {
-                background-position: center -210px;
-
-            }
+            
 
             @include lg {
                 grid-area: letseat;
+                background-position: center -210px;
             }
 
         }
