@@ -456,6 +456,15 @@ footer {
   grid-template-areas: ". footer .";
   padding: 16px 0px;
 }
+footer a:link,
+footer a:visited {
+  color: #F4F4D8;
+  transition: 0.25s;
+}
+footer a:hover,
+footer a:active {
+  color: #3D4133;
+}
 @media (min-width: 768px) {
   footer {
     padding: 24px 0px;
@@ -473,7 +482,7 @@ footer > div h3 {
   font-family: "Halant", serif;
   font-weight: 600;
   font-size: 1.25rem;
-  margin-bottom: 6px;
+  margin-bottom: 11px;
 }
 @media (min-width: 768px) {
   footer > div h3 {
@@ -498,6 +507,9 @@ footer > div h3 {
     grid-template-areas: "locations sign-up follow";
   }
 }
+footer > div #locations {
+  margin-bottom: 10px;
+}
 footer > div #locations h4 {
   font-family: "Halant", serif;
   font-weight: 600;
@@ -505,14 +517,32 @@ footer > div #locations h4 {
 }
 footer > div #locations section {
   color: #F4F4D8;
+  margin-bottom: 32px;
 }
 footer > div #locations section ul li i {
   color: #DDBEA9;
+}
+footer > div #locations section ul li address {
+  font-size: 400;
+  margin-left: 5px;
+}
+footer > div #locations section ul li a {
+  margin-left: 9px;
+}
+footer > div #locations section ul .info {
+  display: flex;
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   footer > div #locations {
     grid-area: locations;
   }
+}
+footer > div #sign-up {
+  margin-bottom: 10px;
+}
+footer > div #sign-up h3 {
+  align: center;
 }
 @media (min-width: 768px) {
   footer > div #sign-up {
@@ -523,6 +553,21 @@ footer > div #sign-up form input {
   font-weight: 400;
   font-size: 0.875rem;
   color: #8E7869;
+  display: block;
+  height: 50px;
+  width: 93%;
+  background-color: #F4F4D8;
+  border: none;
+}
+@media (min-width: 768px) {
+  footer > div #sign-up form input {
+    width: 93%;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #sign-up form input {
+    width: 300px;
+  }
 }
 footer > div #sign-up form input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -537,6 +582,9 @@ footer > div #sign-up form button {
   padding: 5px 8px;
   transition: 0.25s;
   cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  margin-left: 356px;
 }
 footer > div #sign-up form button:hover {
   background-color: #000;
@@ -680,6 +728,7 @@ footer > div #follow ul li a:active {
   }
 }
 #hero > ul #h2 span {
+  display: inline;
   font-weight: 500;
 }
 

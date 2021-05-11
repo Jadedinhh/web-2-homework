@@ -5,8 +5,18 @@ footer {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
     padding: 16px 0px;
-  
 
+    a:link,
+    a:visited {
+        color: $egg;
+        transition: 0.25s;
+    
+    }
+
+    a:hover,
+    a:active {
+        color: $tree;
+    }
 
 
     @include md {
@@ -21,19 +31,19 @@ footer {
     >div {
         grid-area: footer;
 
-       
+
 
         h3 {
             font-family: 'Halant', serif;
             font-weight: 600;
             font-size: rem-calc(20);
-            margin-bottom: 6px;
+            margin-bottom: 11px;
 
-            @include md{
+            @include md {
                 margin-bottom: 10px;
             }
 
-            @include lg{
+            @include lg {
                 margin-bottom: 12px;
             }
 
@@ -56,23 +66,40 @@ footer {
 
 
         #locations {
+            margin-bottom: 10px;
             
-            h4 {
-            font-family: 'Halant', serif;
-            font-weight: 600;
-            margin-bottom: 6px;
 
-        }
+            h4 {
+                font-family: 'Halant', serif;
+                font-weight: 600;
+                margin-bottom: 6px;
+
+            }
 
             section {
                 color: $egg;
+                margin-bottom: 32px;
 
                 ul {
                     li {
+
                         i {
                             color: $acorn;
                         }
+
+                        address{
+                            font-size: 400;
+                            margin-left: 5px;
+                        }
+                        a{
+                            margin-left: 9px;
+                        }
                     }
+                    
+                    .info{
+                            display: flex;
+                            margin-bottom: 16px;
+                        }
                 }
             }
 
@@ -82,17 +109,36 @@ footer {
         }
 
         #sign-up {
-           
+            margin-bottom: 10px;
+
+            h3 {
+                align: center;
+            }
 
             @include md {
                 grid-area: sign-up;
             }
+
+
 
             form {
                 input {
                     font-weight: 400;
                     font-size: rem-calc(14);
                     color: $burnt;
+                    display: block;
+                    height: 50px;
+                    width: 93%;
+                    background-color: $egg;
+                    border: none;
+
+                    @include md {
+                        width: 93%;
+                    }
+
+                    @include lg {
+                        width: 300px;
+                    }
 
                     &::placeholder {
                         /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -109,6 +155,10 @@ footer {
                     padding: 5px 8px;
                     transition: 0.25s;
                     cursor: pointer;
+                    margin-top: 15px;
+                    display: flex;
+                    margin-left: 356px;
+
 
                     &:hover {
                         background-color: $black;
@@ -126,7 +176,7 @@ footer {
 
             ul {
                 display: flex;
-              
+
 
                 li {
                     margin: 0 5px;
