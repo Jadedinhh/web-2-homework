@@ -37,6 +37,18 @@
             color: $white;
             padding: 16px 0px;
 
+            .serve{
+                display: flex;
+
+                section{
+
+                }
+
+                aside{
+                    margin-left: auto;
+                }
+            }
+
             @include md{
                 padding: 24px 0px;
             }
@@ -70,6 +82,7 @@
                              padding: 5px 8px;
                              transition: 0.25s;
                              cursor: pointer;
+                             margin-top: 9px;
 
                              &:hover{
                                  background-color: $black;
@@ -87,20 +100,29 @@
                         height: 85px;
                         width: 85px;
                         border-radius: 100%;
+                       
                     }
 
                     #service-left{
                         background-image: url(../img/service/fresh-penne.jpeg);
-
+                       
+                        
                     }
                     #service-right{
                         background-image: url(../img/service/fussili.jpg);
-
+                        
+                    //  @include md{
+                    //      button{
+                    //         margin-top: 100px;
+                    //     }
+                    //  }   
                     }
 
                 }
             }
         }
+
+        
 
 
     }
