@@ -20,8 +20,10 @@
                  font-weight: 300;
                 //  border: $xanh;
                 padding-right: 40%;
+                border-color: $xanh;
                 border-top: none;
-                border-bottom: $xanh;
+                border-left: none;
+                border-right: none;
                 
                 
                  &::placeholder {

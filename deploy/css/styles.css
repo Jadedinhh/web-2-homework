@@ -753,8 +753,10 @@ footer > div #follow ul li a:active {
 #search > div form input {
   font-weight: 300;
   padding-right: 40%;
+  border-color: #E0E0BB;
   border-top: none;
-  border-bottom: #E0E0BB;
+  border-left: none;
+  border-right: none;
 }
 #search > div form input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
