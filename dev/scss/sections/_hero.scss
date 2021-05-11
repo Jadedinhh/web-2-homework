@@ -56,7 +56,9 @@
                 grid-template-columns: auto 480px 16px;
             }
 
-
+            .hero-info{
+                display: flex;
+            }
             a {
                 grid-area: hero-content;
                

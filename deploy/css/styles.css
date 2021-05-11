@@ -672,6 +672,9 @@ footer > div #follow ul li a:active {
     grid-template-columns: auto 480px 16px;
   }
 }
+#hero > ul li .hero-info {
+  display: flex;
+}
 #hero > ul li a {
   grid-area: hero-content;
 }
