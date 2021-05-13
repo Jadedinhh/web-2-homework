@@ -129,9 +129,8 @@ footer {
                     font-weight: 400;
                     font-size: rem-calc(14);
                     color: $burnt;
-                    display: block;
-                    height: 50px;
-                    width: 93%;
+                    padding: 16px 2%;
+                    width: 96%;
                     background-color: $egg;
                     border: none;
 
@@ -182,6 +181,9 @@ footer {
 
             ul {
                 display: flex;
+                @include md{
+                    justify-content: flex-end;
+                }
 
                 @include md {
                     text-align: right;
