@@ -394,13 +394,52 @@ a {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #fff;
+  font-family: "Halant", serif;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    color: #E0E0BB;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #F4F4D8;
+}
+
 /* =============
     Header
 ============= */
 header {
   background-color: #3D4133;
   color: #E0E0BB;
-  padding: 16px 0px;
   left: 0;
   position: fixed;
   top: 0;
@@ -462,7 +501,6 @@ header > div #nav-container {
   grid-area: nav;
   display: none;
   padding: 20px 10px 10px;
-  text-align: right;
 }
 @media (min-width: 1024px) {
   header > div #nav-container {
