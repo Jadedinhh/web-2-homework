@@ -816,6 +816,7 @@ footer > div #follow ul li a:active {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  margin-top: 100px;
 }
 @media (min-width: 1200px) {
   #search {
