@@ -2,9 +2,7 @@
     Header
 ============= */
 header{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
+
     background-color: $tree;
     color: $xanh;
     padding: 16px 0px;
@@ -13,32 +11,19 @@ header{
     top: 0;
     width: 100%;
 
-    @include xl{
-     grid-template-columns: auto 1200px auto;
-    }
+    
 
     >div{
-        grid-area: header;
+       display: grid;
+       grid-template-columns: 20% auto;
+       grid-template-areas: "logo burger"
+                            " nav nav";    
+
         
-       @include md{
-            display: grid;
-            grid-template-columns: 16px 10% auto 16px;
-            grid-template-areas: " . article section .";
-        }
 
-        article{
-            grid-area: article;
-        }
-
-        section{
-            display: none;
-
-             @include md{
-                 display: grid;
-                 grid-area: section;
-             }
-
-             h1{
+        #logo-container{
+            grid-area: logo;
+    h1{
                 font-family: 'Halant', serif;
                 font-weight: 700;
                 font-size: rem-calc(23);
@@ -53,7 +38,26 @@ header{
                  font-weight: 400;
                  font-size: rem-calc(13);
              }
+        }
 
+        #burger-containter{
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 10px;
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                cursor: pointer;
+                font-size: rem-calc(30);
+            }
+        }
+
+        #nav-container {
+              background-color: $xanh;
         }
     }
 }
