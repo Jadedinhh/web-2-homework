@@ -8,6 +8,10 @@ header{
     background-color: $tree;
     color: $xanh;
     padding: 16px 0px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     @include xl{
      grid-template-columns: auto 1200px auto;

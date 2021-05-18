@@ -265,34 +265,6 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 3
     },
-    "\/dev\/global\/helpers\/_mixins.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/helpers\/_mixins.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/global\/helpers\/_variables.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/helpers\/_variables.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/global\/script.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -310,7 +282,7 @@
       "oF" : 3
     },
     "\/dev\/js\/script.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
