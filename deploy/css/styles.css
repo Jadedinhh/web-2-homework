@@ -440,6 +440,7 @@ a {
 header {
   background-color: #3D4133;
   color: #E0E0BB;
+  padding: 16px 0px;
   left: 0;
   position: fixed;
   top: 0;
@@ -501,6 +502,7 @@ header > div #nav-container {
   grid-area: nav;
   display: none;
   padding: 20px 10px 10px;
+  text-align: right;
 }
 @media (min-width: 1024px) {
   header > div #nav-container {

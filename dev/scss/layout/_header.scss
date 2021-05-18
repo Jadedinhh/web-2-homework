@@ -5,6 +5,7 @@ header {
 
     background-color: $tree;
     color: $xanh;
+    padding: 16px 0px;
     left: 0;
     position: fixed;
     top: 0;
@@ -77,7 +78,7 @@ header {
             grid-area: nav;
             display: none;
             padding: 20px 10px 10px;
-            
+            text-align: right;
 
             @include lg{
                 background-color: $tree;
