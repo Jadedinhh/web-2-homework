@@ -398,54 +398,77 @@ a {
     Header
 ============= */
 header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
   background-color: #3D4133;
   color: #E0E0BB;
   padding: 16px 0px;
-}
-@media (min-width: 1200px) {
-  header {
-    grid-template-columns: auto 1200px auto;
-  }
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header > div {
-  grid-area: header;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "logo burger" " nav nav";
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header > div {
-    display: grid;
-    grid-template-columns: 16px 10% auto 16px;
-    grid-template-areas: " . article section .";
+    grid-template-columns: 20% auto;
+    grid-template-areas: "logo nav";
   }
 }
-header > div article {
-  grid-area: article;
+header > div #logo-container {
+  grid-area: logo;
+  padding: 10px;
 }
-header > div section {
-  display: none;
+header > div #logo-container a:link, header > div #logo-container a:visited {
+  transition: 0.25s;
 }
-@media (min-width: 768px) {
-  header > div section {
-    display: grid;
-    grid-area: section;
-  }
-}
-header > div section h1 {
+header > div #logo-container h1 {
   font-family: "Halant", serif;
   font-weight: 700;
   font-size: 1.4375rem;
   margin-bottom: -10px;
+  display: none;
 }
 @media (min-width: 1024px) {
-  header > div section h1 {
+  header > div #logo-container h1 {
     font-size: 2.0625rem;
   }
 }
-header > div section h5 {
+header > div #logo-container h5 {
   font-weight: 400;
   font-size: 0.8125rem;
+  display: none;
+}
+header > div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  header > div #burger-container {
+    display: none !important;
+  }
+}
+header > div #burger-container i {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+header > div #nav-container {
+  background-color: #E0E0BB;
+  grid-area: nav;
+  display: none;
+  padding: 20px 10px 10px;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  header > div #nav-container {
+    background-color: #3D4133;
+    display: block !important;
+  }
 }
 
 footer {

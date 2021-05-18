@@ -1,7 +1,7 @@
 /* =============
     Header
 ============= */
-header{
+header {
 
     background-color: $tree;
     color: $xanh;
@@ -11,53 +11,79 @@ header{
     top: 0;
     width: 100%;
 
-    
 
-    >div{
-       display: grid;
-       grid-template-columns: 20% auto;
-       grid-template-areas: "logo burger"
-                            " nav nav";    
 
-        
+    >div {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-areas: "logo burger"
+            " nav nav";
 
-        #logo-container{
+        @include lg{
+            grid-template-columns: 20% auto;
+            grid-template-areas: "logo nav";
+        }
+
+
+
+        #logo-container {
             grid-area: logo;
-    h1{
+            padding: 10px;
+
+            a:link, a:visited {
+                transition: 0.25s;
+
+                &:hover {
+                }
+            }
+
+            h1 {
                 font-family: 'Halant', serif;
                 font-weight: 700;
                 font-size: rem-calc(23);
                 margin-bottom: -10px;
+                display: none;
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(33);
                 }
-             }
+            }
 
-             h5{
-                 font-weight: 400;
-                 font-size: rem-calc(13);
-             }
+            h5 {
+                font-weight: 400;
+                font-size: rem-calc(13);
+                display: none;
+            }
         }
 
-        #burger-containter{
+        #burger-container {
             align-items: center;
             display: flex;
             grid-area: burger;
             padding: 10px;
 
-            @include lg {
+            @include md {
                 display: none !important;
             }
 
             i {
-                cursor: pointer;
+                margin-left: auto;
+               cursor: pointer;
                 font-size: rem-calc(30);
             }
         }
 
         #nav-container {
-              background-color: $xanh;
+            background-color: $xanh;
+            grid-area: nav;
+            display: none;
+            padding: 20px 10px 10px;
+            text-align: right;
+
+            @include lg{
+                background-color: $tree;
+                display: block !important;
+            }
         }
     }
 }
