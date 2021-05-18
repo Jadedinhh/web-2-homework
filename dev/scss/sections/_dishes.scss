@@ -1,8 +1,8 @@
 #dishes {
     @include md {
         display: grid;
-        grid-template-columns: 16px auto 16px;
         grid-template-areas: ". dishes .";
+        grid-template-columns: 16px auto 16px;
     }
 
     @include xl {
@@ -13,10 +13,10 @@
         h3 {
             color: $ung;
             font-family: 'Halant', serif;
-            font-weight: 600;
             font-size: rem-calc(20);
+            font-weight: 600;
 
-            @include lg{
+            @include lg {
                 font-size: rem-calc(37);
             }
         }
@@ -26,55 +26,51 @@
         }
 
         ul {
-            display: grid;
             // grid-template-rows: repeat(5,380px);
+            display: grid;
             gap: 16px;
             margin-bottom: 24px;
-        
+
             @include md {
-                display: grid;
                 // grid-template-rows: repeat(3,430px);
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-areas: "d1 d1 d2 d2"
-                                     "d3 d3 d4 d4"
-                                     " . d5 d5 .";
+                display: grid;
                 gap: 16px;
+                grid-template-areas: "d1 d1 d2 d2"
+                    "d3 d3 d4 d4"
+                    " . d5 d5 .";
+                grid-template-columns: repeat(4, 1fr);
                 margin-bottom: 40px;
             }
 
             @include lg {
                 // grid-template-rows: repeat(2,400px);
-                grid-template-columns: repeat(6, 1fr);
                 grid-template-areas: "d1 d1 d2 d2 d3 d3"
-                                     ". d4 d4 d5 d5 .";
+                    ". d4 d4 d5 d5 .";
+                grid-template-columns: repeat(6, 1fr);
                 margin-bottom: 56px;
             }
 
-            @include xl{
+            @include xl {
                 margin-bottom: 64px;
             }
-
 
             li {
                 //height: 400px;
                 background-color: $xanh;
                 padding-bottom: 16px;
 
-                @include md{
+                @include md {
                     padding-bottom: 24px;
                 }
 
                 img {
                     width: 100%;
-
                 }
 
                 section {
                     display: grid;
-                    grid-template-columns: 16px auto 16px;
                     grid-template-areas: ". dishes-content .";
-
-
+                    grid-template-columns: 16px auto 16px;
 
                     >div {
                         grid-area: dishes-content;
@@ -82,159 +78,170 @@
                         h4 {
                             color: $tree;
                             font-family: 'Halant', serif;
-                            font-weight: 600;
                             font-size: rem-calc(27);
+                            font-weight: 600;
                         }
 
                         button {
                             background-color: $chocomilk;
+                            border: none;
                             color: $white;
+                            cursor: pointer;
+                            font-size: rem-calc(14);
                             font-weight: 800;
-                             font-size: rem-calc(14);
-                             border: none;
-                             padding: 5px 8px;
-                             transition: 0.25s;
-                             cursor: pointer;
+                            padding: 5px 8px;
+                            transition: 0.25s;
 
-                             &:hover{
-                                 background-color: $black;
-                                 color: $white;
-                             }
+                            &:hover {
+                                background-color: $black;
+                                color: $white;
+                            }
                         }
-
                     }
                 }
             }
 
             #d1 {
-                h4{
-                    margin-top: 12px;
+                h4 {
                     margin-bottom: 9px;
+                    margin-top: 12px;
                 }
-                p{
+
+                p {
                     margin-bottom: 11px;
                 }
-            
+
                 @include md {
                     grid-area: d1;
-                    h4{
-                        margin-top: 20px;
+
+                    h4 {
                         margin-bottom: 46px;
+                        margin-top: 20px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 41px;
                     }
                 }
 
-                @include lg{
-                    h4{
-                        margin-top: 20px;
+                @include lg {
+                    h4 {
                         margin-bottom: 9px;
+                        margin-top: 20px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 20px;
                     }
                 }
             }
 
             #d2 {
-                h4{
-                    margin-top: 12px;
+                h4 {
                     margin-bottom: 9px;
+                    margin-top: 12px;
                 }
-                p{
+
+                p {
                     margin-bottom: 50px;
                 }
-               
+
                 @include md {
                     grid-area: d2;
-                    h4{
-                        margin-top: 20px;
+
+                    h4 {
                         margin-bottom: 14px;
+                        margin-top: 20px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 61px;
                     }
                 }
-                @include lg{
-                    h4{
-                        margin-top: 20px;
+
+                @include lg {
+                    h4 {
                         margin-bottom: 9px;
+                        margin-top: 20px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 59px;
                     }
                 }
             }
 
             #d3 {
-                h4{
-                    margin-top: 12px;
+                h4 {
                     margin-bottom: 9px;
+                    margin-top: 12px;
                 }
-                p{
+
+                p {
                     margin-bottom: 11px;
                 }
 
                 @include md {
                     grid-area: d3;
-                    h4{
-                        margin-top: 20px;
+
+                    h4 {
                         margin-bottom: 14px;
+                        margin-top: 20px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 21px;
                     }
                 }
             }
 
             #d4 {
-                h4{
-                    margin-top: 12px;
+                h4 {
                     margin-bottom: 9px;
+                    margin-top: 12px;
                 }
-                p{
+
+                p {
                     margin-bottom: 31px;
                 }
-             
+
                 @include md {
                     grid-area: d4;
-                    h4{
-                        margin-top: 20px;
+
+                    h4 {
                         margin-bottom: 14px;
+                        margin-top: 20px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 40px;
                     }
                 }
             }
 
             #d5 {
-                h4{
-                    margin-top: 12px;
+                h4 {
                     margin-bottom: 9px;
+                    margin-top: 12px;
                 }
-                p{
+
+                p {
                     margin-bottom: 31px;
                 }
-        
+
                 @include md {
                     grid-area: d5;
-                    h4{
-                        margin-top: 20px;
+
+                    h4 {
                         margin-bottom: 14px;
+                        margin-top: 20px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 41px;
                     }
                 }
             }
-
-
-
         }
-
     }
-
-
 }

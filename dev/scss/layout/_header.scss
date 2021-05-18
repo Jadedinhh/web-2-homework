@@ -14,9 +14,9 @@ header {
 
     >div {
         display: grid;
-        grid-template-columns: 20% auto;
+        grid-template-columns: 50% auto;
         grid-template-areas: "logo burger"
-            " nav nav";
+                            "nav nav";
 
         @include lg{
             grid-template-columns: 20% auto;
@@ -33,6 +33,7 @@ header {
                 transition: 0.25s;
 
                 &:hover {
+                   color: $white;
                 }
             }
 
@@ -42,6 +43,11 @@ header {
                 font-size: rem-calc(23);
                 margin-bottom: -10px;
                 display: none;
+                
+
+                @include md{
+                    display: inline-block;
+                }
 
                 @include lg {
                     font-size: rem-calc(33);
@@ -68,7 +74,10 @@ header {
             i {
                 margin-left: auto;
                cursor: pointer;
-                font-size: rem-calc(30);
+                font-size: rem-calc(40); 
+                &:hover {
+                    color: $white;
+                 }
             }
         }
 

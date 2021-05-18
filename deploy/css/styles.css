@@ -448,8 +448,8 @@ header {
 }
 header > div {
   display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "logo burger" " nav nav";
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nav nav";
 }
 @media (min-width: 1024px) {
   header > div {
@@ -464,12 +464,20 @@ header > div #logo-container {
 header > div #logo-container a:link, header > div #logo-container a:visited {
   transition: 0.25s;
 }
+header > div #logo-container a:link:hover, header > div #logo-container a:visited:hover {
+  color: #fff;
+}
 header > div #logo-container h1 {
   font-family: "Halant", serif;
   font-weight: 700;
   font-size: 1.4375rem;
   margin-bottom: -10px;
   display: none;
+}
+@media (min-width: 768px) {
+  header > div #logo-container h1 {
+    display: inline-block;
+  }
 }
 @media (min-width: 1024px) {
   header > div #logo-container h1 {
@@ -495,7 +503,10 @@ header > div #burger-container {
 header > div #burger-container i {
   margin-left: auto;
   cursor: pointer;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
+}
+header > div #burger-container i:hover {
+  color: #fff;
 }
 header > div #nav-container {
   background-color: #E0E0BB;
@@ -1042,8 +1053,8 @@ footer > div #follow ul li a:active {
 @media (min-width: 768px) {
   #dishes {
     display: grid;
-    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". dishes .";
+    grid-template-columns: 16px auto 16px;
   }
 }
 @media (min-width: 1200px) {
@@ -1054,8 +1065,8 @@ footer > div #follow ul li a:active {
 #dishes > div h3 {
   color: #5F5F50;
   font-family: "Halant", serif;
-  font-weight: 600;
   font-size: 1.25rem;
+  font-weight: 600;
 }
 @media (min-width: 1024px) {
   #dishes > div h3 {
@@ -1075,16 +1086,16 @@ footer > div #follow ul li a:active {
 @media (min-width: 768px) {
   #dishes > div ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "d1 d1 d2 d2" "d3 d3 d4 d4" " . d5 d5 .";
     gap: 16px;
+    grid-template-areas: "d1 d1 d2 d2" "d3 d3 d4 d4" " . d5 d5 .";
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 40px;
   }
 }
 @media (min-width: 1024px) {
   #dishes > div ul {
-    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "d1 d1 d2 d2 d3 d3" ". d4 d4 d5 d5 .";
+    grid-template-columns: repeat(6, 1fr);
     margin-bottom: 56px;
   }
 }
@@ -1107,8 +1118,8 @@ footer > div #follow ul li a:active {
 }
 #dishes > div ul li section {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". dishes-content .";
+  grid-template-columns: 16px auto 16px;
 }
 #dishes > div ul li section > div {
   grid-area: dishes-content;
@@ -1116,26 +1127,26 @@ footer > div #follow ul li a:active {
 #dishes > div ul li section > div h4 {
   color: #3D4133;
   font-family: "Halant", serif;
-  font-weight: 600;
   font-size: 1.6875rem;
+  font-weight: 600;
 }
 #dishes > div ul li section > div button {
   background-color: #CB997E;
-  color: #fff;
-  font-weight: 800;
-  font-size: 0.875rem;
   border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 800;
   padding: 5px 8px;
   transition: 0.25s;
-  cursor: pointer;
 }
 #dishes > div ul li section > div button:hover {
   background-color: #000;
   color: #fff;
 }
 #dishes > div ul #d1 h4 {
-  margin-top: 12px;
   margin-bottom: 9px;
+  margin-top: 12px;
 }
 #dishes > div ul #d1 p {
   margin-bottom: 11px;
@@ -1145,8 +1156,8 @@ footer > div #follow ul li a:active {
     grid-area: d1;
   }
   #dishes > div ul #d1 h4 {
-    margin-top: 20px;
     margin-bottom: 46px;
+    margin-top: 20px;
   }
   #dishes > div ul #d1 p {
     margin-bottom: 41px;
@@ -1154,16 +1165,16 @@ footer > div #follow ul li a:active {
 }
 @media (min-width: 1024px) {
   #dishes > div ul #d1 h4 {
-    margin-top: 20px;
     margin-bottom: 9px;
+    margin-top: 20px;
   }
   #dishes > div ul #d1 p {
     margin-bottom: 20px;
   }
 }
 #dishes > div ul #d2 h4 {
-  margin-top: 12px;
   margin-bottom: 9px;
+  margin-top: 12px;
 }
 #dishes > div ul #d2 p {
   margin-bottom: 50px;
@@ -1173,8 +1184,8 @@ footer > div #follow ul li a:active {
     grid-area: d2;
   }
   #dishes > div ul #d2 h4 {
-    margin-top: 20px;
     margin-bottom: 14px;
+    margin-top: 20px;
   }
   #dishes > div ul #d2 p {
     margin-bottom: 61px;
@@ -1182,16 +1193,16 @@ footer > div #follow ul li a:active {
 }
 @media (min-width: 1024px) {
   #dishes > div ul #d2 h4 {
-    margin-top: 20px;
     margin-bottom: 9px;
+    margin-top: 20px;
   }
   #dishes > div ul #d2 p {
     margin-bottom: 59px;
   }
 }
 #dishes > div ul #d3 h4 {
-  margin-top: 12px;
   margin-bottom: 9px;
+  margin-top: 12px;
 }
 #dishes > div ul #d3 p {
   margin-bottom: 11px;
@@ -1201,16 +1212,16 @@ footer > div #follow ul li a:active {
     grid-area: d3;
   }
   #dishes > div ul #d3 h4 {
-    margin-top: 20px;
     margin-bottom: 14px;
+    margin-top: 20px;
   }
   #dishes > div ul #d3 p {
     margin-bottom: 21px;
   }
 }
 #dishes > div ul #d4 h4 {
-  margin-top: 12px;
   margin-bottom: 9px;
+  margin-top: 12px;
 }
 #dishes > div ul #d4 p {
   margin-bottom: 31px;
@@ -1220,16 +1231,16 @@ footer > div #follow ul li a:active {
     grid-area: d4;
   }
   #dishes > div ul #d4 h4 {
-    margin-top: 20px;
     margin-bottom: 14px;
+    margin-top: 20px;
   }
   #dishes > div ul #d4 p {
     margin-bottom: 40px;
   }
 }
 #dishes > div ul #d5 h4 {
-  margin-top: 12px;
   margin-bottom: 9px;
+  margin-top: 12px;
 }
 #dishes > div ul #d5 p {
   margin-bottom: 31px;
@@ -1239,8 +1250,8 @@ footer > div #follow ul li a:active {
     grid-area: d5;
   }
   #dishes > div ul #d5 h4 {
-    margin-top: 20px;
     margin-bottom: 14px;
+    margin-top: 20px;
   }
   #dishes > div ul #d5 p {
     margin-bottom: 41px;
