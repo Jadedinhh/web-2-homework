@@ -5,7 +5,6 @@ header {
 
     background-color: $tree;
     color: $xanh;
-    padding: 16px 0px;
     left: 0;
     position: fixed;
     top: 0;
@@ -62,7 +61,7 @@ header {
             grid-area: burger;
             padding: 10px;
 
-            @include md {
+            @include lg {
                 display: none !important;
             }
 

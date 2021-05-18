@@ -418,6 +418,7 @@ a {
 #nav-container ul li a:visited {
   color: #fff;
   font-family: "Halant", serif;
+  font-size: 1.25rem;
   padding: 0 20px;
   text-decoration: none;
   transition: 0.25s;
@@ -440,7 +441,6 @@ a {
 header {
   background-color: #3D4133;
   color: #E0E0BB;
-  padding: 16px 0px;
   left: 0;
   position: fixed;
   top: 0;
@@ -487,7 +487,7 @@ header > div #burger-container {
   grid-area: burger;
   padding: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header > div #burger-container {
     display: none !important;
   }
