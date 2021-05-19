@@ -448,7 +448,7 @@ header {
 header > div {
   display: grid;
   grid-template-areas: "logo burger" "nav nav";
-  grid-template-columns: 60% auto;
+  grid-template-columns: 85% auto;
 }
 @media (min-width: 1024px) {
   header > div {
@@ -468,11 +468,12 @@ header > div #logo-container a:link:hover,
 header > div #logo-container a:visited:hover {
   color: #fff;
 }
+header > div #logo-content {
+  grid-area: logo-content;
+}
 @media (min-width: 1024px) {
   header > div #logo-content {
-    grid-area: logo-content;
     padding-top: 15px;
-    text-align: left;
   }
 }
 header > div #logo-content h1 {
@@ -483,7 +484,7 @@ header > div #logo-content h1 {
 }
 @media (min-width: 1024px) {
   header > div #logo-content h1 {
-    display: inline-block;
+    display: block;
     font-size: 1.875rem;
   }
 }

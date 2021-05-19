@@ -13,7 +13,7 @@ header {
         display: grid;
         grid-template-areas: "logo burger"
             "nav nav";
-        grid-template-columns: 60% auto;
+        grid-template-columns: 85% auto;
 
         @include lg {
             grid-template-areas: "logo logo-content nav";
@@ -34,11 +34,12 @@ header {
             }
         }
 
-        #logo-content {
+        #logo-content { 
+            grid-area: logo-content;
             @include lg {
-                grid-area: logo-content;
+                
                 padding-top: 15px;
-                text-align: left;
+                
             }
 
             h1 {
@@ -48,7 +49,7 @@ header {
                 font-weight: 700;
 
                 @include lg {
-                    display: inline-block;
+                    display: block;
                     font-size: rem-calc(30);
                 }
             }
