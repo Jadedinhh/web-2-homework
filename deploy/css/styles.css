@@ -447,38 +447,53 @@ header {
 }
 header > div {
   display: grid;
-  grid-template-columns: 60% auto;
   grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: 60% auto;
 }
 @media (min-width: 1024px) {
   header > div {
-    grid-template-columns: 30% auto;
-    grid-template-areas: "logo nav";
+    grid-template-areas: "logo logo-content nav";
+    grid-template-columns: 7% auto auto;
   }
 }
 header > div #logo-container {
   grid-area: logo;
   padding: 10px;
 }
-header > div #logo-container a:link, header > div #logo-container a:visited {
+header > div #logo-container a:link,
+header > div #logo-container a:visited {
   transition: 0.25s;
 }
-header > div #logo-container a:link:hover, header > div #logo-container a:visited:hover {
+header > div #logo-container a:link:hover,
+header > div #logo-container a:visited:hover {
   color: #fff;
 }
-header > div #logo-container h1 {
-  font-family: "Halant", serif;
-  font-weight: 700;
-  font-size: 1.4375rem;
+@media (min-width: 1024px) {
+  header > div #logo-content {
+    grid-area: logo-content;
+    padding-top: 15px;
+    text-align: left;
+  }
+}
+header > div #logo-content h1 {
   display: none;
+  font-family: "Halant", serif;
+  font-size: 1.4375rem;
+  font-weight: 700;
 }
 @media (min-width: 1024px) {
-  header > div #logo-container h1 {
+  header > div #logo-content h1 {
+    display: inline-block;
     font-size: 1.875rem;
   }
 }
-header > div #logo-container p {
+header > div #logo-content p {
   display: none;
+}
+@media (min-width: 1024px) {
+  header > div #logo-content p {
+    display: block;
+  }
 }
 header > div #burger-container {
   align-items: center;
@@ -492,9 +507,9 @@ header > div #burger-container {
   }
 }
 header > div #burger-container i {
-  margin-left: auto;
   cursor: pointer;
   font-size: 2.5rem;
+  margin-left: auto;
 }
 header > div #burger-container i:hover {
   color: #fff;
@@ -502,8 +517,8 @@ header > div #burger-container i:hover {
 header > div #nav-container {
   background-color: #E0E0BB;
   color: #3D4133;
-  grid-area: nav;
   display: none;
+  grid-area: nav;
   padding: 20px 10px 10px;
   text-align: right;
 }
