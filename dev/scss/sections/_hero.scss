@@ -110,23 +110,24 @@
 
         #h2 {
             background-color: $tan;
+             @include xl {
+                grid-template-columns: 16px 480px auto;
+            }
 
-            h4 {
+            a{
+                h4 {
                 margin-bottom: 5px;
             }
 
             p {
                 font-weight: 400;
+                span {
+                    font-weight: 500;
+                }
             }
 
-            @include xl {
-                grid-template-columns: 16px 480px auto;
             }
-
-            span {
-                display: inline;
-                font-weight: 500;
-            }
+        
         }
     }
 }
