@@ -780,19 +780,18 @@ footer > div #follow ul li a:active {
 #hero > ul #h2 {
   background-color: #D5A57F;
 }
-#hero > ul #h2 h4 {
-  margin-bottom: 5px;
-}
-#hero > ul #h2 p {
-  font-weight: 400;
-}
 @media (min-width: 1200px) {
   #hero > ul #h2 {
     grid-template-columns: 16px 480px auto;
   }
 }
-#hero > ul #h2 span {
-  display: inline;
+#hero > ul #h2 a h4 {
+  margin-bottom: 5px;
+}
+#hero > ul #h2 a p {
+  font-weight: 400;
+}
+#hero > ul #h2 a p span {
   font-weight: 500;
 }
 
