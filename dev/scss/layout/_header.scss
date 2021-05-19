@@ -38,6 +38,21 @@ header {
                    color: $white;
                 }
             } 
+
+            h1{
+                font-family: 'Halant', serif;
+                font-weight: 700;
+                font-size: rem-calc(23);
+                display: none;
+               
+                @include lg{
+                    font-size: rem-calc(30);
+                }
+            }
+
+            p{
+                display: none;
+            }
             
         }
 

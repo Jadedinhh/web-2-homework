@@ -466,6 +466,20 @@ header > div #logo-container a:link, header > div #logo-container a:visited {
 header > div #logo-container a:link:hover, header > div #logo-container a:visited:hover {
   color: #fff;
 }
+header > div #logo-container h1 {
+  font-family: "Halant", serif;
+  font-weight: 700;
+  font-size: 1.4375rem;
+  display: none;
+}
+@media (min-width: 1024px) {
+  header > div #logo-container h1 {
+    font-size: 1.875rem;
+  }
+}
+header > div #logo-container p {
+  display: none;
+}
 header > div #burger-container {
   align-items: center;
   display: flex;
