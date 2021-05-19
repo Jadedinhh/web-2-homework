@@ -18,8 +18,9 @@ header {
         grid-template-areas: "logo burger"
                             "nav nav";
 
+
         @include lg{
-            grid-template-columns: 60% auto;
+            grid-template-columns: 30% auto;
             grid-template-areas: "logo nav";
         }
 
@@ -29,58 +30,15 @@ header {
             grid-area: logo;
             padding: 10px;
 
-            @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "svg h1"
-                                     "svg h5";
-            }
-
-            div{
-                >div{
-                    
-                    a:link, a:visited {
+        
+               a:link, a:visited {
                 transition: 0.25s;
-                grid-area: svg;
+
                 &:hover {
                    color: $white;
                 }
             } 
-                }
-                
-
-            h1 {
-                grid-area: h1;
-                font-family: 'Halant', serif;
-                font-weight: 700;
-                font-size: rem-calc(23);
-                display: none;
-                
-
-                @include md{
-                    display: contents;
-                    text-align: center;
-                }
-
-                @include lg {
-                    font-size: rem-calc(33);
-                }
-            }
-
-            h5 {
-                grid-area: h5;
-                font-weight: 400;
-                font-size: rem-calc(13);
-                display: none;
-
-
-                @include md{
-                    display: block;
-                }
-            }
-            }
-
-           
+            
         }
 
         #burger-container {

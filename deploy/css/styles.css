@@ -432,7 +432,7 @@ a {
 #nav-container ul li a:link:hover, #nav-container ul li a:link:active,
 #nav-container ul li a:visited:hover,
 #nav-container ul li a:visited:active {
-  color: #F4F4D8;
+  color: #6B705C;
 }
 
 /* =============
@@ -453,7 +453,7 @@ header > div {
 }
 @media (min-width: 1024px) {
   header > div {
-    grid-template-columns: 60% auto;
+    grid-template-columns: 30% auto;
     grid-template-areas: "logo nav";
   }
 }
@@ -461,48 +461,11 @@ header > div #logo-container {
   grid-area: logo;
   padding: 10px;
 }
-@media (min-width: 768px) {
-  header > div #logo-container {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "svg h1" "svg h5";
-  }
-}
-header > div #logo-container div > div a:link, header > div #logo-container div > div a:visited {
+header > div #logo-container a:link, header > div #logo-container a:visited {
   transition: 0.25s;
-  grid-area: svg;
 }
-header > div #logo-container div > div a:link:hover, header > div #logo-container div > div a:visited:hover {
+header > div #logo-container a:link:hover, header > div #logo-container a:visited:hover {
   color: #fff;
-}
-header > div #logo-container div h1 {
-  grid-area: h1;
-  font-family: "Halant", serif;
-  font-weight: 700;
-  font-size: 1.4375rem;
-  display: none;
-}
-@media (min-width: 768px) {
-  header > div #logo-container div h1 {
-    display: contents;
-    text-align: center;
-  }
-}
-@media (min-width: 1024px) {
-  header > div #logo-container div h1 {
-    font-size: 2.0625rem;
-  }
-}
-header > div #logo-container div h5 {
-  grid-area: h5;
-  font-weight: 400;
-  font-size: 0.8125rem;
-  display: none;
-}
-@media (min-width: 768px) {
-  header > div #logo-container div h5 {
-    display: block;
-  }
 }
 header > div #burger-container {
   align-items: center;
