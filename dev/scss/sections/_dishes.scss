@@ -26,16 +26,15 @@
         }
 
         ul {
-            // grid-template-rows: repeat(5,380px);
             display: grid;
             gap: 16px;
             margin-bottom: 24px;
 
             @include md {
-                // grid-template-rows: repeat(3,430px);
                 display: grid;
                 gap: 16px;
-                grid-template-areas: "d1 d1 d2 d2"
+                grid-template-areas: 
+                    "d1 d1 d2 d2"
                     "d3 d3 d4 d4"
                     " . d5 d5 .";
                 grid-template-columns: repeat(4, 1fr);
@@ -43,8 +42,8 @@
             }
 
             @include lg {
-                // grid-template-rows: repeat(2,400px);
-                grid-template-areas: "d1 d1 d2 d2 d3 d3"
+                grid-template-areas: 
+                    "d1 d1 d2 d2 d3 d3"
                     ". d4 d4 d5 d5 .";
                 grid-template-columns: repeat(6, 1fr);
                 margin-bottom: 56px;
@@ -55,7 +54,6 @@
             }
 
             li {
-                //height: 400px;
                 background-color: $xanh;
                 padding-bottom: 16px;
 
