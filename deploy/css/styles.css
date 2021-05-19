@@ -448,12 +448,12 @@ header {
 }
 header > div {
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 60% auto;
   grid-template-areas: "logo burger" "nav nav";
 }
 @media (min-width: 1024px) {
   header > div {
-    grid-template-columns: 20% auto;
+    grid-template-columns: 60% auto;
     grid-template-areas: "logo nav";
   }
 }
@@ -461,33 +461,48 @@ header > div #logo-container {
   grid-area: logo;
   padding: 10px;
 }
-header > div #logo-container a:link, header > div #logo-container a:visited {
-  transition: 0.25s;
+@media (min-width: 768px) {
+  header > div #logo-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "svg h1" "svg h5";
+  }
 }
-header > div #logo-container a:link:hover, header > div #logo-container a:visited:hover {
+header > div #logo-container div > div a:link, header > div #logo-container div > div a:visited {
+  transition: 0.25s;
+  grid-area: svg;
+}
+header > div #logo-container div > div a:link:hover, header > div #logo-container div > div a:visited:hover {
   color: #fff;
 }
-header > div #logo-container h1 {
+header > div #logo-container div h1 {
+  grid-area: h1;
   font-family: "Halant", serif;
   font-weight: 700;
   font-size: 1.4375rem;
-  margin-bottom: -10px;
   display: none;
 }
 @media (min-width: 768px) {
-  header > div #logo-container h1 {
-    display: inline-block;
+  header > div #logo-container div h1 {
+    display: contents;
+    text-align: center;
   }
 }
 @media (min-width: 1024px) {
-  header > div #logo-container h1 {
+  header > div #logo-container div h1 {
     font-size: 2.0625rem;
   }
 }
-header > div #logo-container h5 {
+header > div #logo-container div h5 {
+  grid-area: h5;
   font-weight: 400;
   font-size: 0.8125rem;
   display: none;
+}
+@media (min-width: 768px) {
+  header > div #logo-container div h5 {
+    display: block;
+  }
 }
 header > div #burger-container {
   align-items: center;
@@ -510,6 +525,7 @@ header > div #burger-container i:hover {
 }
 header > div #nav-container {
   background-color: #E0E0BB;
+  color: #3D4133;
   grid-area: nav;
   display: none;
   padding: 20px 10px 10px;
