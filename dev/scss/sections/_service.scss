@@ -1,11 +1,11 @@
 #service {
-    @include md{
+    @include md {
         display: grid;
-        grid-template-columns: 16px auto 16px;
         grid-template-areas: ". service .";
+        grid-template-columns: 16px auto 16px;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1000px auto;
     }
 
@@ -14,116 +14,101 @@
         gap: 16px;
         margin-bottom: 24px;
 
-       @include md {
-            grid-template-columns: 50% auto;
+        @include md {
             grid-area: service;
+            grid-template-columns: 50% auto;
             margin-bottom: 40px;
-
         }
 
-        @include lg{
+        @include lg {
             margin-bottom: 56px;
         }
 
-        @include xl{
+        @include xl {
             margin-bottom: 64px;
         }
 
         li {
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". service-context .";
             background-color: $algae;
             color: $white;
+            display: grid;
+            grid-template-areas: ". service-context .";
+            grid-template-columns: 16px auto 16px;
             padding: 16px 0px;
 
-            .serve{
+            .serve {
                 display: flex;
 
-                section{
+                section {}
 
-                }
-
-                aside{
+                aside {
                     margin-left: auto;
                 }
             }
 
-            @include md{
+            @include md {
                 padding: 24px 0px;
             }
 
             >div {
                 grid-area: service-context;
-                
-                section{
-                    div{
 
-                        h3{ 
+                section {
+                    div {
+                        h3 {
                             font-family: 'Halant', serif;
-                            font-weight: 600;
                             font-size: rem-calc(22);
+                            font-weight: 600;
                             margin-bottom: 10px;
 
-                            @include md{
+                            @include md {
                                 font-size: rem-calc(29);
                             }
-                            
-                            @include lg{
+
+                            @include lg {
                                 font-size: rem-calc(31);
                             }
                         }
-                         button{
-                             background-color: $chocomilk;
-                             color: $white;
-                             font-weight: 800;
-                             font-size: rem-calc(14);
-                             border: none;
-                             padding: 5px 8px;
-                             transition: 0.25s;
-                             cursor: pointer;
-                             margin-top: 9px;
 
-                             &:hover{
-                                 background-color: $black;
-                                 color: $white;
-                             }
-                         }
+                        button {
+                            background-color: $chocomilk;
+                            border: none;
+                            color: $white;
+                            cursor: pointer;
+                            font-size: rem-calc(14);
+                            font-weight: 800;
+                            margin-top: 9px;
+                            padding: 5px 8px;
+                            transition: 0.25s;
+
+                            &:hover {
+                                background-color: $black;
+                                color: $white;
+                            }
+                        }
                     }
-
                 }
 
-                aside{
-                    div{
+                aside {
+                    div {
                         background-position: center;
                         border: 4px $white solid;
+                        border-radius: 100%;
                         height: 85px;
                         width: 85px;
-                        border-radius: 100%;
-                       
                     }
 
-                    #service-left{
+                    #service-left {
                         background-image: url(../img/service/fresh-penne.jpeg);
-                       
-                        
-                    }
-                    #service-right{
-                        background-image: url(../img/service/fussili.jpg);
-                        
-                    //  @include md{
-                    //      button{
-                    //         margin-top: 100px;
-                    //     }
-                    //  }   
                     }
 
+                    #service-right {
+                        background-image: url(../img/service/fussili.jpg);
+                       
+                    }
                 }
             }
         }
-
-        
-
-
     }
 }
+

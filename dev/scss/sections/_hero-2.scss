@@ -1,9 +1,8 @@
 #hero-2 {
-
     @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". hero-2 .";
+        grid-template-columns: auto 1200px auto;
     }
 
     ul {
@@ -11,65 +10,48 @@
         grid-template-rows: 550px 800px;
         margin-bottom: 24px;
 
-
         @include md {
-            grid-template-columns: 50% auto;
-            // height: 800px;
-            grid-template-rows: 600px;
             grid-template-areas: "meal letseat";
+            grid-template-columns: 50% auto;
+            grid-template-rows: 600px;
             margin-bottom: 40px;
-
         }
 
         @include lg {
-            grid-template-columns: 16px 55% auto 16px;
-            // grid-template-rows: repeat(2, 650px);
             grid-template-areas: ". meal letseat .";
+            grid-template-columns: 16px 55% auto 16px;
             margin-bottom: 56px;
-             
-
-
         }
 
         @include xl {
             grid-area: hero-2;
+            grid-template-areas: "meal letseat"
+                "meal h2-3";
             grid-template-columns: 65% auto;
             grid-template-rows: 377px 377px;
-            grid-template-areas: "meal letseat"
-                                 "meal h2-3";
             margin-bottom: 64px;
         }
 
         li {
-            // height: 230px;
-            background-size: cover;
             background-position: center;
-
+            background-size: cover;
         }
 
         #h2-1 {
-
             background-image: url("../img/hero-2/meal.jpg");
-
 
             @include lg {
                 grid-area: meal;
             }
-
-
         }
 
         #h2-2 {
-
             background-image: url("../img/hero-2/letseat.jpg");
 
-            
-
             @include lg {
-                grid-area: letseat;
                 background-position: center -210px;
+                grid-area: letseat;
             }
-
         }
 
         #h2-3 {
@@ -81,6 +63,5 @@
                 grid-area: h2-3;
             }
         }
-
     }
 }

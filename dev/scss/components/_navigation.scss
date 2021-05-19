@@ -1,8 +1,8 @@
 /* =============
     Navigation
 ============= */
-#nav-container{
-    ul{
+#nav-container {
+    ul {
         height: 100%;
 
         @include lg {
@@ -10,7 +10,7 @@
             justify-content: flex-end;
         }
 
-        li{
+        li {
             margin-bottom: 20px;
             text-align: right;
 
@@ -23,11 +23,12 @@
             a:link,
             a:visited {
                 color: $white;
-                font-family:  'Halant', serif;
+                font-family: 'Halant', serif;
                 font-size: rem-calc(20);
                 padding: 0 20px;
                 text-decoration: none;
                 transition: 0.25s;
+
                 @include lg {
                     color: $xanh;
                 }

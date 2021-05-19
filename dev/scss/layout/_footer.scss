@@ -2,22 +2,20 @@ footer {
     background-color: $ung;
     color: $white;
     display: grid;
-    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+    grid-template-columns: 16px auto 16px;
     padding: 16px 0px;
 
     a:link,
     a:visited {
         color: $egg;
         transition: 0.25s;
-    
     }
 
     a:hover,
     a:active {
         color: $tree;
     }
-
 
     @include md {
         padding: 24px 0px;
@@ -27,16 +25,13 @@ footer {
         grid-template-columns: auto 1000px auto;
     }
 
-
     >div {
         grid-area: footer;
 
-
-
         h3 {
             font-family: 'Halant', serif;
-            font-weight: 600;
             font-size: rem-calc(20);
+            font-weight: 600;
             margin-bottom: 11px;
 
             @include md {
@@ -46,62 +41,55 @@ footer {
             @include lg {
                 margin-bottom: 12px;
             }
-
-
         }
-
 
         @include md {
             display: grid;
-            grid-template-columns: 50% auto;
             grid-template-areas: "locations sign-up"
                 "locations follow";
+            grid-template-columns: 50% auto;
         }
 
         @include lg {
-            grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "locations sign-up follow";
+            grid-template-columns: repeat(3, 1fr);
         }
-
-
 
         #locations {
             margin-bottom: 10px;
-            
 
             h4 {
                 font-family: 'Halant', serif;
                 font-weight: 600;
                 margin-bottom: 6px;
-
             }
 
             section {
-                color: $egg;
-                margin-bottom: 32px;
                 border-bottom: 2px;
                 border-color: $egg;
+                color: $egg;
+                margin-bottom: 32px;
 
                 ul {
                     li {
-
                         i {
                             color: $acorn;
                         }
 
-                        address{
+                        address {
                             font-size: 400;
                             margin-left: 5px;
                         }
-                        a{
+
+                        a {
                             margin-left: 9px;
                         }
                     }
-                    
-                    .info{
-                            display: flex;
-                            margin-bottom: 16px;
-                        }
+
+                    .info {
+                        display: flex;
+                        margin-bottom: 16px;
+                    }
                 }
             }
 
@@ -122,17 +110,15 @@ footer {
                 text-align: center;
             }
 
-
-
             form {
                 input {
-                    font-weight: 400;
-                    font-size: rem-calc(14);
-                    color: $burnt;
-                    padding: 16px 2%;
-                    width: 96%;
                     background-color: $egg;
                     border: none;
+                    color: $burnt;
+                    font-size: rem-calc(14);
+                    font-weight: 400;
+                    padding: 16px 2%;
+                    width: 96%;
 
                     @include md {
                         width: 93%;
@@ -150,17 +136,16 @@ footer {
 
                 button {
                     background-color: $chocomilk;
-                    color: $white;
-                    font-weight: 800;
-                    font-size: rem-calc(14);
                     border: none;
+                    color: $white;
+                    cursor: pointer;
+                    display: flex;
+                    font-size: rem-calc(14);
+                    font-weight: 800;
+                    margin-left: auto;
+                    margin-top: 15px;
                     padding: 5px 8px;
                     transition: 0.25s;
-                    cursor: pointer;
-                    margin-top: 15px;
-                    display: flex;
-                    margin-left: auto;
-
 
                     &:hover {
                         background-color: $black;
@@ -168,12 +153,9 @@ footer {
                     }
                 }
             }
-
         }
 
         #follow {
-            
-
             @include md {
                 grid-area: follow;
                 text-align: right;
@@ -181,18 +163,14 @@ footer {
 
             ul {
                 display: flex;
-                @include md{
-                    justify-content: flex-end;
-                }
 
                 @include md {
                     text-align: right;
                 }
-                
 
                 li {
                     margin: 0 5px;
-                    
+
                     a:link,
                     a:visited {
                         color: $white;
@@ -207,9 +185,5 @@ footer {
                 }
             }
         }
-
-
     }
-
-
 }
