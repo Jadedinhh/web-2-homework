@@ -2,7 +2,6 @@
     Header
 ============= */
 header {
-
     background-color: $tree;
     color: $xanh;
     left: 0;
@@ -10,50 +9,57 @@ header {
     top: 0;
     width: 100%;
 
-
-
     >div {
         display: grid;
-        grid-template-columns: 60% auto;
         grid-template-areas: "logo burger"
-                            "nav nav";
+            "nav nav";
+        grid-template-columns: 60% auto;
 
-
-        @include lg{
-            grid-template-columns: 30% auto;
-            grid-template-areas: "logo nav";
+        @include lg {
+            grid-template-areas: "logo logo-content nav";
+            grid-template-columns: 7% auto auto;
         }
-
-
 
         #logo-container {
             grid-area: logo;
             padding: 10px;
 
-        
-               a:link, a:visited {
+            a:link,
+            a:visited {
                 transition: 0.25s;
 
                 &:hover {
-                   color: $white;
+                    color: $white;
                 }
-            } 
+            }
+        }
 
-            h1{
-                font-family: 'Halant', serif;
-                font-weight: 700;
-                font-size: rem-calc(23);
+        #logo-content {
+            @include lg {
+                grid-area: logo-content;
+                padding-top: 15px;
+                text-align: left;
+            }
+
+            h1 {
                 display: none;
-               
-                @include lg{
+                font-family: 'Halant', serif;
+                font-size: rem-calc(23);
+                font-weight: 700;
+
+                @include lg {
+                    display: inline-block;
                     font-size: rem-calc(30);
                 }
             }
 
-            p{
+            p {
                 display: none;
+
+                @include lg {
+                    display: block;
+                }
             }
-            
         }
 
         #burger-container {
@@ -67,24 +73,25 @@ header {
             }
 
             i {
+                cursor: pointer;
+                font-size: rem-calc(40);
                 margin-left: auto;
-               cursor: pointer;
-                font-size: rem-calc(40); 
+
                 &:hover {
                     color: $white;
-                 }
+                }
             }
         }
 
         #nav-container {
             background-color: $xanh;
             color: $tree;
-            grid-area: nav;
             display: none;
+            grid-area: nav;
             padding: 20px 10px 10px;
             text-align: right;
 
-            @include lg{
+            @include lg {
                 background-color: $tree;
                 display: block !important;
             }
