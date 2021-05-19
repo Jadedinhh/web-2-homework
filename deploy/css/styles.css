@@ -448,7 +448,7 @@ header {
 header > div {
   display: grid;
   grid-template-areas: "logo burger" "nav nav";
-  grid-template-columns: 85% auto;
+  grid-template-columns: 20% auto;
 }
 @media (min-width: 1024px) {
   header > div {
@@ -501,6 +501,12 @@ header > div #burger-container {
   display: flex;
   grid-area: burger;
   padding: 10px;
+  padding-left: 69vw;
+}
+@media (min-width: 768px) {
+  header > div #burger-container {
+    padding-left: 74.5vw;
+  }
 }
 @media (min-width: 1024px) {
   header > div #burger-container {

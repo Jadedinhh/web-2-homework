@@ -13,13 +13,13 @@ header {
         display: grid;
         grid-template-areas: "logo burger"
             "nav nav";
-        grid-template-columns: 85% auto;
+        grid-template-columns: 20% auto;
 
         @include lg {
             grid-template-areas: "logo logo-content nav";
             grid-template-columns: 7% auto auto;
         }
-
+        
         #logo-container {
             grid-area: logo;
             padding: 10px;
@@ -68,6 +68,11 @@ header {
             display: flex;
             grid-area: burger;
             padding: 10px;
+            padding-left: 69vw;
+
+            @include md{
+                padding-left: 74.5vw;
+            }
 
             @include lg {
                 display: none !important;
