@@ -607,6 +607,7 @@ footer > div #sign-up h3 {
 footer > div #sign-up form input {
   background-color: #F4F4D8;
   border: none;
+  border-radius: 0;
   color: #8E7869;
   font-size: 0.875rem;
   font-weight: 400;
@@ -656,6 +657,12 @@ footer > div #follow ul {
 @media (min-width: 768px) {
   footer > div #follow ul {
     text-align: right;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #follow ul {
+    justify-content: flex-end;
   }
 }
 footer > div #follow ul li {
@@ -688,6 +695,7 @@ footer > div #follow ul li a:active {
 #hero a:hover,
 #hero a:active {
   color: #3D4133;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #hero {
@@ -802,6 +810,17 @@ footer > div #follow ul li a:active {
   padding: 18px 0;
   margin-top: 100px;
 }
+@media (min-width: 768px) {
+  #search {
+    padding: 22px 0;
+    margin-top: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  #search {
+    margin-top: 125px;
+  }
+}
 @media (min-width: 1200px) {
   #search {
     grid-template-columns: auto 1000px auto;
@@ -811,15 +830,15 @@ footer > div #follow ul li a:active {
   grid-area: search;
 }
 #search > div form {
-  padding: 24px 16px;
+  display: flex;
 }
 #search > div form input {
-  border-color: #E0E0BB;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #E0E0BB;
+  font-size: 1.25rem;
   font-weight: 300;
-  width: 87%;
+  width: 100%;
 }
 #search > div form input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -845,6 +864,7 @@ footer > div #follow ul li a:active {
   transition: 0.25s;
 }
 #search > div form button:hover {
+  cursor: pointer;
   background-color: #000;
   color: #fff;
 }

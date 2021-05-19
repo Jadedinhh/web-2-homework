@@ -114,6 +114,7 @@ footer {
                 input {
                     background-color: $egg;
                     border: none;
+                    border-radius: 0;
                     color: $burnt;
                     font-size: rem-calc(14);
                     font-weight: 400;
@@ -166,6 +167,11 @@ footer {
 
                 @include md {
                     text-align: right;
+                    justify-content: flex-end;
+                }
+
+                @include lg {
+                    justify-content: flex-end;
                 }
 
                 li {
